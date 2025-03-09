@@ -766,6 +766,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 91.44) (xy 120.65 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e343599-41bd-45ea-9e1b-cead3f084d99")
+	)
+	(wire
+		(pts
 			(xy 146.05 83.82) (xy 149.86 83.82)
 		)
 		(stroke
@@ -889,6 +899,28 @@
 		(uuid "332ca889-4244-43f1-876c-fc53f7f6c4da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.4486 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NSS{slash}Slave Select Pin"
+		(shape input)
+		(at 113.03 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ea8bf98-77e0-46db-9dd7-ab6fe00adad4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.0597 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
