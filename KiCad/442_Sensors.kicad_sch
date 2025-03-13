@@ -3699,7 +3699,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "31f147e4-18f9-4574-83a9-ddd82a10c46b")
+			(uuid "31f147e4-18f9-4574-83a9-ddd82a10c46c")
 		)
 		(instances
 			(project ""
