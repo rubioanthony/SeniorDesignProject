@@ -5,145 +5,6 @@
 	(uuid "4b87987a-7eb1-4c92-aab7-f7fab4804919")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -717,16 +578,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 67.31) (xy 147.32 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e6cf7c6-5754-464d-bcff-323a476fc9eb")
-	)
-	(wire
-		(pts
 			(xy 147.32 74.93) (xy 157.48 74.93)
 		)
 		(stroke
@@ -807,35 +658,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 69.85) (xy 147.32 74.93)
+			(xy 147.32 67.31) (xy 147.32 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e8916761-a0b3-4277-88d7-88b2e968c89d")
-	)
-	(global_label "Vbat"
-		(shape input)
-		(at 142.24 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0f082d9c-deb9-47f3-857c-fefde5e352c1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.1425 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "Sense(ADC Pin on Microcontroller"
 		(shape input)
@@ -850,6 +679,28 @@
 		(uuid "9ae49465-73e6-4938-9ca6-1c2c267f6273")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 196.8716 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Pyro Pin"
+		(shape input)
+		(at 147.32 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e5c168cf-710c-45c5-80a2-ef9616aea573")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.4694 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -942,76 +793,6 @@
 			(project ""
 				(path "/4b87987a-7eb1-4c92-aab7-f7fab4804919"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 152.4 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18819912-cc19-4d37-964c-1040d4c92aca")
-		(property "Reference" "J1"
-			(at 154.94 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 154.94 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 152.4 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f3963943-4b87-4980-8bbb-d217df1fd94a")
-		)
-		(pin "1"
-			(uuid "cd13030e-096a-4140-aa6d-4d5e26d4c565")
-		)
-		(instances
-			(project ""
-				(path "/4b87987a-7eb1-4c92-aab7-f7fab4804919"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -1111,7 +892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 155.702 82.55 90)
 			(effects
 				(font
@@ -1245,7 +1026,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 129.54 95.758 90)
 			(effects
 				(font
@@ -1391,7 +1172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 136.652 105.41 90)
 			(effects
 				(font
@@ -1461,7 +1242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 155.702 96.52 90)
 			(effects
 				(font
