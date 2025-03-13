@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "dcf7de3b-368d-46c2-86e7-63a3d7a56ed6")
+	(uuid "99b64fc1-0349-4184-8c1f-c373c2c18e88")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:Antenna_Shield"

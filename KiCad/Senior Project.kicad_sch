@@ -5662,6 +5662,120 @@
 		)
 	)
 	(sheet
+		(at 57.15 105.41)
+		(size 12.7 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bf62daab-1cf5-4742-a85c-ffd3166ecdf9")
+		(property "Sheetname" "PowerReg"
+			(at 57.15 104.6984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerReg.kicad_sch"
+			(at 57.15 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Senior Project"
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 118.11)
+		(size 12.7 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fc7ffde7-f19b-4eb6-b923-3f87c2b4142b")
+		(property "Sheetname" "Pyro Channel"
+			(at 57.15 117.3984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PyroChannel.kicad_sch"
+			(at 57.15 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Pyro Pin" input
+			(at 69.85 119.38 0)
+			(uuid "bf4fb036-0bb9-49bd-b9c1-1e079cf0dd4f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Pyro_GPIO" input
+			(at 69.85 121.92 0)
+			(uuid "c7668c6f-0160-4e1b-b69f-36975c1ffe3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Sense" input
+			(at 69.85 124.46 0)
+			(uuid "4956af4e-210f-4c57-bc69-d06db0c7b24a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Senior Project"
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 167.64 39.37)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
