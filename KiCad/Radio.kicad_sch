@@ -5,43 +5,37 @@
 	(uuid "760e4be0-0457-4cde-a6ec-d56d0abadbc7")
 	(paper "A4")
 	(lib_symbols
-		(symbol "CON-SMA-EDGE-S:CON-SMA-EDGE-S"
+		(symbol "Device:Antenna_Shield"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -3.81 4.064 0)
+			(property "Reference" "AE"
+				(at -1.905 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify right)
 				)
 			)
-			(property "Value" "CON-SMA-EDGE-S"
-				(at -4.064 -4.318 0)
+			(property "Value" "Antenna_Shield"
+				(at -1.905 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify right)
 				)
 			)
-			(property "Footprint" "CON-SMA-EDGE-S:RFSOLUTIONS_CON-SMA-EDGE-S"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
+			(property "Footprint" ""
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -49,7 +43,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Datasheet" "~"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Antenna with extra pin for shielding"
 				(at 0 0 0)
 				(effects
 					(font
@@ -58,50 +61,31 @@
 					(hide yes)
 				)
 			)
-			(property "PARTREV" "1"
+			(property "ki_keywords" "antenna"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "Antenna_Shield_0_1"
+				(arc
+					(start 0 -2.667)
+					(mid -0.8485 -2.1032)
+					(end -0.508 -1.143)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "6.35mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(fill
+						(type none)
 					)
-					(justify bottom)
-					(hide yes)
 				)
-			)
-			(property "MANUFACTURER" "RF Solutions"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "CON-SMA-EDGE-S_0_0"
 				(polyline
 					(pts
-						(xy -3.302 3.302) (xy -2.54 2.54)
+						(xy 0 5.08) (xy 0 -3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -113,10 +97,22 @@
 				)
 				(polyline
 					(pts
-						(xy -3.302 1.778) (xy -2.54 2.54)
+						(xy 0 -2.54) (xy 0 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -1.143)
+					(mid 0.8046 -2.0885)
+					(end 0 -2.667)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -125,70 +121,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.302 0.762) (xy -2.54 0)
+						(xy 0.762 -1.905) (xy 2.54 -1.905)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.302 -0.762) (xy -2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.524) (xy 0 1.524)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.762) (xy -1.27 -1.524)
-					)
-					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -196,31 +132,19 @@
 					)
 				)
 				(circle
-					(center 0 2.54)
-					(radius 1.016)
+					(center 0.762 -1.905)
+					(radius 0.1778)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 0 1.524) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.524) (xy 1.016 1.524)
+						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -232,131 +156,50 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy -2.286 0)
+						(xy 2.54 -2.54) (xy 2.54 -1.905)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.254)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy -0.762 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy -0.508 -1.524)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.762) (xy 0.254 -1.524)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 2.54 2.54 180)
-					(length 5.08)
-					(name "~"
+			)
+			(symbol "Antenna_Shield_1_1"
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 5.08)
-					(name "~"
+				(pin input line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "Shield"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "G1"
+					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -739,7 +582,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -760,7 +603,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -786,7 +629,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -804,7 +647,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -842,7 +685,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1104,16 +947,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 86.36) (xy 149.86 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae960bce-749a-4fcb-9e63-b326b68f6871")
-	)
-	(wire
-		(pts
 			(xy 130.81 106.68) (xy 130.81 109.22)
 		)
 		(stroke
@@ -1210,7 +1043,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 86.36 0)
+		(at 152.4 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1218,8 +1051,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50065782-b8e7-47bf-bad6-6006ff02ba7f")
-		(property "Reference" "#PWR02"
-			(at 147.32 92.71 0)
+		(property "Reference" "#PWR043"
+			(at 152.4 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,7 +1061,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 91.44 0)
+			(at 152.4 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1236,7 +1069,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 86.36 0)
+			(at 152.4 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,7 +1078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 86.36 0)
+			(at 152.4 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1254,7 +1087,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 86.36 0)
+			(at 152.4 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1268,7 +1101,7 @@
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/1c8bf498-9754-4bec-a707-8e930cfc3fe5"
-					(reference "#PWR02")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -1289,7 +1122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e6e0365-2377-47b1-8352-8c27cf02e3ab")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 135.5441 76.2 0)
 			(effects
 				(font
@@ -1307,7 +1140,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RF_Module:HOPERF_RFM9XW_SMD"
 			(at 49.53 49.53 0)
 			(effects
 				(font
@@ -1385,7 +1218,7 @@
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/1c8bf498-9754-4bec-a707-8e930cfc3fe5"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -1398,7 +1231,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+3V3")
 		(at 133.35 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1406,8 +1239,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "88136ee7-3630-444b-b3ac-93e7af22efb7")
-		(property "Reference" "#PWR01"
+		(uuid "6cfd96ac-440d-451c-a9fa-b96e962d059b")
+		(property "Reference" "#PWR041"
 			(at 133.35 71.12 0)
 			(effects
 				(font
@@ -1416,7 +1249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+3V3"
 			(at 133.35 62.23 0)
 			(effects
 				(font
@@ -1442,7 +1275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 133.35 67.31 0)
 			(effects
 				(font
@@ -1452,18 +1285,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d0a4e4c9-7345-4759-a376-8a3371eadde0")
+			(uuid "e1dff8fa-5d79-4353-bf4f-785e9434b3d5")
 		)
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/1c8bf498-9754-4bec-a707-8e930cfc3fe5"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/760e4be0-0457-4cde-a6ec-d56d0abadbc7"
-					(reference "#PWR01")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -1479,7 +1306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a88791b4-f37f-420e-8fd7-44733d1075d7")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR042"
 			(at 133.35 119.38 0)
 			(effects
 				(font
@@ -1529,7 +1356,7 @@
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/1c8bf498-9754-4bec-a707-8e930cfc3fe5"
-					(reference "#PWR03")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -1542,45 +1369,35 @@
 		)
 	)
 	(symbol
-		(lib_id "CON-SMA-EDGE-S:CON-SMA-EDGE-S")
-		(at 152.4 83.82 180)
+		(lib_id "Device:Antenna_Shield")
+		(at 149.86 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d4c83bb3-1970-4a8a-a38a-6b86e3dd5df4")
-		(property "Reference" "J1"
-			(at 157.48 83.5659 0)
+		(uuid "f4cc3d7d-b31e-48ec-ae73-21bf1785cdc1")
+		(property "Reference" "AE2"
+			(at 153.67 76.8349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "CON-SMA-EDGE-S"
-			(at 157.48 86.1059 0)
+		(property "Value" "Antenna_Shield"
+			(at 153.67 79.3749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "CON-SMA-EDGE-S:RFSOLUTIONS_CON-SMA-EDGE-S"
-			(at 152.4 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 83.82 0)
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 149.86 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1588,8 +1405,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 152.4 83.82 0)
+		(property "Datasheet" "~"
+			(at 149.86 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1597,62 +1414,25 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "1"
-			(at 152.4 83.82 0)
+		(property "Description" "Antenna with extra pin for shielding"
+			(at 149.86 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 152.4 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "6.35mm"
-			(at 152.4 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "RF Solutions"
-			(at 152.4 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "G1"
-			(uuid "0048301d-6d6a-427c-9ac4-20f17be0ba18")
+		(pin "2"
+			(uuid "d3544c44-d3d6-4172-b81a-319963ff5221")
 		)
 		(pin "1"
-			(uuid "fb2362cc-dbfa-47b9-9e8d-f0872162ffc8")
+			(uuid "b84d6655-fba8-4df2-817e-c984bf30b42e")
 		)
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/1c8bf498-9754-4bec-a707-8e930cfc3fe5"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/760e4be0-0457-4cde-a6ec-d56d0abadbc7"
-					(reference "J1")
+					(reference "AE2")
 					(unit 1)
 				)
 			)
