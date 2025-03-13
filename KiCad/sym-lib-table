@@ -5,4 +5,5 @@
   (lib (name "LSM6")(type "KiCad")(uri "${KIPRJMOD}/symbols/LSM6.kicad_sym")(options "")(descr ""))
   (lib (name "CAM-M8Q-0")(type "KiCad")(uri "${KIPRJMOD}/symbols/CAM-M8Q-0.kicad_sym")(options "")(descr ""))
   (lib (name "ESP32-S3FH4R2")(type "KiCad")(uri "${KIPRJMOD}/symbols/ESP32-S3FH4R2.kicad_sym")(options "")(descr ""))
+  (lib (name "CON-SMA-EDGE-S")(type "KiCad")(uri "${KIPRJMOD}/symbols/CON-SMA-EDGE-S.kicad_sym")(options "")(descr ""))
 )

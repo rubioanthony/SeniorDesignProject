@@ -427,6 +427,10 @@
     [
       "fc7ffde7-f19b-4eb6-b923-3f87c2b4142b",
       "Pyro Channel"
+    ],
+    [
+      "1c8bf498-9754-4bec-a707-8e930cfc3fe5",
+      "Radio"
     ]
   ],
   "text_variables": {}

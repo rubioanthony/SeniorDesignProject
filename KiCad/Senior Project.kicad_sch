@@ -5609,6 +5609,108 @@
 		)
 	)
 	(sheet
+		(at 58.42 133.35)
+		(size 25.4 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1c8bf498-9754-4bec-a707-8e930cfc3fe5")
+		(property "Sheetname" "Radio"
+			(at 58.42 132.6384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Radio.kicad_sch"
+			(at 58.42 151.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Interupt GPIO Pin" input
+			(at 83.82 135.89 0)
+			(uuid "c1087236-126c-4316-b985-b45d636279e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MISO" input
+			(at 83.82 138.43 0)
+			(uuid "829fbf01-eeff-4bfc-b38b-42ea870dca49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOSI" input
+			(at 83.82 140.97 0)
+			(uuid "6c9ccf9f-909f-46b9-b787-fcf656243630")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NSS{slash}Slave Select Pin" input
+			(at 83.82 143.51 0)
+			(uuid "f418fe79-8370-4eea-b657-0a8262ce3619")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RST" input
+			(at 83.82 146.05 0)
+			(uuid "8801b654-fe19-4589-b64b-985a9d656b16")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCK" input
+			(at 83.82 148.59 0)
+			(uuid "b5dc9929-0f20-4cc0-baf2-651f6583f6f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Senior Project"
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 168.91 64.77)
 		(size 12.7 5.08)
 		(exclude_from_sim no)
