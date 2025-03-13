@@ -5806,6 +5806,88 @@
 		)
 	)
 	(sheet
+		(at 58.42 158.75)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3")
+		(property "Sheetname" "Sensors"
+			(at 58.42 158.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "442_Sensors.kicad_sch"
+			(at 58.42 172.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Rx" input
+			(at 71.12 161.29 0)
+			(uuid "9f23fcf3-c1e4-4d12-acc3-0155bd66a8fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL" input
+			(at 71.12 163.83 0)
+			(uuid "c7e589dc-a062-4645-a1e7-058160097d97")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" input
+			(at 71.12 166.37 0)
+			(uuid "024fc320-4c3b-461f-b498-e90672873f0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Tx" input
+			(at 71.12 168.91 0)
+			(uuid "70115bc2-a6c8-445d-b2fc-8780499baca1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Senior Project"
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 57.15 118.11)
 		(size 12.7 8.89)
 		(exclude_from_sim no)

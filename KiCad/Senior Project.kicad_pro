@@ -431,6 +431,10 @@
     [
       "1c8bf498-9754-4bec-a707-8e930cfc3fe5",
       "Radio"
+    ],
+    [
+      "c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3",
+      "Sensors"
     ]
   ],
   "text_variables": {}
