@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/symbols/Espressif.kicad_sym")(options "")(descr ""))
+  (lib (name "MS560")(type "KiCad")(uri "${KIPRJMOD}/symbols/MS560.kicad_sym")(options "")(descr ""))
+  (lib (name "LSM6")(type "KiCad")(uri "${KIPRJMOD}/symbols/LSM6.kicad_sym")(options "")(descr ""))
+  (lib (name "CAM-M8Q-0")(type "KiCad")(uri "${KIPRJMOD}/symbols/CAM-M8Q-0.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-S3FH4R2")(type "KiCad")(uri "${KIPRJMOD}/symbols/ESP32-S3FH4R2.kicad_sym")(options "")(descr ""))
+)
