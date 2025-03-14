@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "S3FH4R2")(type "KiCad")(uri "${KIPRJMOD}/footprints/ESP32_S3FH4R2.pretty")(options "")(descr ""))
+  (lib (name "MS56")(type "KiCad")(uri "${KIPRJMOD}/footprints/MS560.pretty")(options "")(descr ""))
+  (lib (name "NR3015T")(type "KiCad")(uri "${KIPRJMOD}/footprints/NR3015.pretty")(options "")(descr ""))
+  (lib (name "OSTVN02A150")(type "KiCad")(uri "${KIPRJMOD}/footprints/OSTVN02A150.pretty")(options "")(descr ""))
+)

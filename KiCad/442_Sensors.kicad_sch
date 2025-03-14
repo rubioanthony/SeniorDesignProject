@@ -2856,11 +2856,12 @@
 				)
 			)
 		)
-		(property "Footprint" "LSM6DSO32TR:XDCR_LSM6DSO32TR"
+		(property "Footprint" "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
 			(at 107.95 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(justify bottom)
 				(hide yes)
@@ -3146,7 +3147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MS560702BA03-50:SON125P300X500X100-8N"
+		(property "Footprint" "MS56:SON8_MS5611_TEC"
 			(at 106.68 101.6 0)
 			(effects
 				(font
