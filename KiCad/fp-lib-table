@@ -5,4 +5,5 @@
   (lib (name "NR3015T")(type "KiCad")(uri "${KIPRJMOD}/footprints/NR3015.pretty")(options "")(descr ""))
   (lib (name "OSTVN02A150")(type "KiCad")(uri "${KIPRJMOD}/footprints/OSTVN02A150.pretty")(options "")(descr ""))
   (lib (name "OSTVN06A150")(type "KiCad")(uri "${KIPRJMOD}/footprints/OSTVN06A150.pretty")(options "")(descr ""))
+  (lib (name "FC-135")(type "KiCad")(uri "${KIPRJMOD}/footprints/FC_135.pretty")(options "")(descr ""))
 )

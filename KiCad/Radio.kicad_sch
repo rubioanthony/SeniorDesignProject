@@ -1079,7 +1079,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CON-SMA-EDGE-S:RFSOLUTIONS_CON-SMA-EDGE-S"
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
 			(at 157.48 83.82 0)
 			(effects
 				(font
