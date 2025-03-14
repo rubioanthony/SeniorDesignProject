@@ -1988,45 +1988,16 @@
 		)
 		(uuid "fea0133d-d2c7-4371-8bfa-1a717f7311c5")
 	)
-	(label "SDA"
+	(hierarchical_label "SDA"
+		(shape input)
 		(at 132.08 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "c1b92a9f-1a6e-4f0b-83a7-ac8b4a20144b")
-	)
-	(label "SDA"
-		(at 86.36 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cc6450fd-c5d0-4902-ada7-59989304d721")
-	)
-	(label "SCL"
-		(at 80.01 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3f3625e-7d01-4eef-8310-30ff35da75e5")
-	)
-	(label "SCL"
-		(at 125.73 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f3e87ba1-a23c-420a-a957-629cd784e696")
+		(uuid "0d1d1db7-1014-4047-a370-21cf38b6da65")
 	)
 	(hierarchical_label "SDA"
 		(shape input)
@@ -2038,6 +2009,17 @@
 			(justify left)
 		)
 		(uuid "0e55bd27-d140-4845-b8d9-e1fe4cab1810")
+	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 86.36 113.03 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "16b86d87-9d93-43fa-9226-4b655b1f6ef1")
 	)
 	(hierarchical_label "GPS_Reset"
 		(shape input)
@@ -2052,14 +2034,14 @@
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 85.09 104.14 270)
+		(at 125.73 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "5d185834-0000-4525-9754-72d5654af243")
+		(uuid "55320f58-568c-4ff0-8fe7-45eb193120c7")
 	)
 	(hierarchical_label "SCL"
 		(shape input)
@@ -2072,29 +2054,29 @@
 		)
 		(uuid "9e5c7e4a-3564-4935-b326-479eb53b456d")
 	)
-	(hierarchical_label "SDA"
+	(hierarchical_label "SCL"
 		(shape input)
-		(at 86.36 109.22 180)
+		(at 80.01 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "a3d06d65-f048-4c9d-8b00-20fdaf58ee24")
+		(uuid "b15c05c4-c137-43ad-a591-6796990df1b8")
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 77.47 96.52 90)
+		(lib_id "power:+3V3")
+		(at 91.44 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "16c09894-224b-46be-9161-361b38dadaf4")
-		(property "Reference" "#PWR044"
-			(at 81.28 96.52 0)
+		(uuid "0d37c84e-e544-4984-a3da-4b702e8637db")
+		(property "Reference" "#PWR065"
+			(at 95.25 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,8 +2084,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
-			(at 73.66 96.5199 90)
+		(property "Value" "+3V3"
+			(at 87.63 101.5999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2112,7 +2094,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 96.52 0)
+			(at 91.44 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2121,7 +2103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 96.52 0)
+			(at 91.44 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2129,8 +2111,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 77.47 96.52 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 91.44 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2139,18 +2121,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ed4d48e-0f14-4951-b3d0-d12175d85543")
+			(uuid "ecbe7143-1c60-421e-84ff-6d0e06c88498")
 		)
 		(instances
-			(project "442_Sensors"
+			(project "Senior Project"
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
-					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-			(project "442_Sensors"
-				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
-					(reference "#PWR021")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -2301,6 +2277,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 137.16 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b477032-4190-4265-80c5-eb06f429dd62")
+		(property "Reference" "#PWR063"
+			(at 133.35 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 140.97 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 137.16 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22c6d060-659a-4a37-a590-38978f6ad064")
+		)
+		(instances
+			(project "Senior Project"
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 168.91 59.69 270)
 		(unit 1)
@@ -2434,79 +2477,6 @@
 			(project "442_Sensors"
 				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 154.94 46.99 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "326af428-36b2-4a51-bcb3-675b30e1d3a3")
-		(property "Reference" "#PWR057"
-			(at 151.13 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 158.75 46.9899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 154.94 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f62a00a3-cb67-4cf2-a128-29e940c1248b")
-		)
-		(instances
-			(project "442_Sensors"
-				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-			(project "442_Sensors"
-				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -2651,6 +2621,140 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 154.94 46.99 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f824e53-b6cf-443e-a4f1-97f279e4966a")
+		(property "Reference" "#PWR062"
+			(at 151.13 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 158.75 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 154.94 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a2ff5ba-74ec-49dd-9313-70c52c7ee929")
+		)
+		(instances
+			(project "Senior Project"
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 153.67 41.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70aa49f9-6524-4e1b-a668-5f51572769c7")
+		(property "Reference" "#PWR061"
+			(at 149.86 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 157.48 41.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 153.67 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c08be47d-01a2-4aca-8449-1123d5b5692c")
+		)
+		(instances
+			(project ""
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 142.24 36.83 180)
 		(unit 1)
@@ -2669,7 +2773,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100nF"
 			(at 144.78 38.0935 0)
 			(effects
 				(font
@@ -2678,7 +2782,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 142.24 36.83 0)
 			(effects
 				(font
@@ -2878,17 +2982,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 153.67 41.91 270)
+		(lib_id "power:+3V3")
+		(at 77.47 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8b631688-9140-4955-b218-d55c6a12ccbf")
-		(property "Reference" "#PWR056"
-			(at 149.86 41.91 0)
+		(uuid "8b51065e-9312-484a-8b56-4c24fba1f5f5")
+		(property "Reference" "#PWR064"
+			(at 81.28 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2896,8 +3000,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
-			(at 157.48 41.9099 90)
+		(property "Value" "+3V3"
+			(at 73.66 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2906,7 +3010,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 41.91 0)
+			(at 77.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,7 +3019,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 41.91 0)
+			(at 77.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,8 +3027,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 153.67 41.91 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 77.47 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,18 +3037,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d3d65547-5d76-42b7-b219-938f3ba684a4")
+			(uuid "e289fb80-1854-4a2a-be0d-bd961e584f9a")
 		)
 		(instances
-			(project "442_Sensors"
+			(project "Senior Project"
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
-					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-			(project "442_Sensors"
-				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
-					(reference "#PWR014")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -3017,79 +3115,6 @@
 			(project "442_Sensors"
 				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 91.44 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9eadd4f9-6c22-4ac7-bfa3-64ce4f545b8c")
-		(property "Reference" "#PWR047"
-			(at 95.25 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 87.63 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 91.44 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e5e1250-a571-4b7e-8011-380657c674ed")
-		)
-		(instances
-			(project "442_Sensors"
-				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-			(project "442_Sensors"
-				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3203,79 +3228,6 @@
 			(project "442_Sensors"
 				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 137.16 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6f11600-114c-4149-be94-4a7262b4d9e9")
-		(property "Reference" "#PWR052"
-			(at 133.35 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 140.97 96.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 137.16 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a58a6aa-d92c-4c7a-b240-d905448dd0fd")
-		)
-		(instances
-			(project "442_Sensors"
-				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3"
-					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-			(project "442_Sensors"
-				(path "/d194a77b-7750-400f-95b2-93ee3282d6b3"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -3572,7 +3524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 133.35 99.06 0)
 			(effects
 				(font
@@ -3710,7 +3662,7 @@
 				)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100nF"
 			(at 173.9963 55.88 90)
 			(effects
 				(font
@@ -3718,7 +3670,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 173.99 59.69 0)
 			(effects
 				(font
@@ -3922,7 +3874,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100nF"
 			(at 144.78 50.8062 0)
 			(effects
 				(font
@@ -3931,7 +3883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 142.24 49.53 0)
 			(effects
 				(font

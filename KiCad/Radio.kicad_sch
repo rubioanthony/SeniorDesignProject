@@ -1307,7 +1307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RF_Module:HOPERF_RFM9XW_SMD"
 			(at 49.53 49.53 0)
 			(effects
 				(font

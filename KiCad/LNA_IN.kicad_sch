@@ -767,7 +767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 158.4452 111.76 0)
 			(effects
 				(font
@@ -837,7 +837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 138.1252 101.6 0)
 			(effects
 				(font
@@ -1039,7 +1039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RF_Antenna:Molex_47948-0001_2.4Ghz"
 			(at 168.91 93.98 0)
 			(effects
 				(font
@@ -1109,7 +1109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 148.2852 101.6 0)
 			(effects
 				(font
@@ -1311,7 +1311,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 157.48 97.79 0)
 			(effects
 				(font
@@ -1379,7 +1379,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 142.24 93.98 0)
 			(effects
 				(font
