@@ -461,8 +461,12 @@
       "PowerReg"
     ],
     [
+      "4f56c78f-4532-4c9f-be6c-2bbf693c5fca",
+      "Pyro Channel3"
+    ],
+    [
       "fc7ffde7-f19b-4eb6-b923-3f87c2b4142b",
-      "Pyro Channel"
+      "Pyro Channel3"
     ],
     [
       "1c8bf498-9754-4bec-a707-8e930cfc3fe5",
@@ -471,6 +475,14 @@
     [
       "c3ab4c5a-4cab-469f-8c3a-b4c939a78ff3",
       "Sensors"
+    ],
+    [
+      "553e2c15-6dd9-455d-b91b-1c20c70d481b",
+      "Pyro Channel1"
+    ],
+    [
+      "528e247e-1625-48b4-9899-73b4b85367ce",
+      "Pyro Channel2"
     ]
   ],
   "text_variables": {}
