@@ -4258,6 +4258,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 166.37) (xy 105.41 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2139d599-33da-43a4-aa82-aa8fe82dacc4")
+	)
+	(wire
+		(pts
 			(xy 180.34 137.16) (xy 186.69 137.16)
 		)
 		(stroke
@@ -4265,6 +4275,16 @@
 			(type default)
 		)
 		(uuid "22b4a416-7e8f-4af3-9db7-f9302206ce74")
+	)
+	(wire
+		(pts
+			(xy 102.87 173.99) (xy 105.41 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e6ca44-4073-444b-9b81-363f350f630e")
 	)
 	(wire
 		(pts
@@ -4295,6 +4315,26 @@
 			(type default)
 		)
 		(uuid "32d48b1a-62fc-496e-bbc9-d9650a27cb46")
+	)
+	(wire
+		(pts
+			(xy 116.84 97.79) (xy 120.65 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33f40eb4-35fd-4123-8a87-203f7f2f39f5")
+	)
+	(wire
+		(pts
+			(xy 116.84 92.71) (xy 120.65 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38735d86-958e-4a5b-b928-45ec10331330")
 	)
 	(wire
 		(pts
@@ -4348,6 +4388,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 161.29) (xy 105.41 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54de68bd-bb39-4585-85c3-324f0ebaec26")
+	)
+	(wire
+		(pts
 			(xy 172.72 127) (xy 180.34 127)
 		)
 		(stroke
@@ -4398,6 +4448,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 95.25) (xy 120.65 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61ab7c8b-df64-45c2-a3dc-2a9dbd8021b3")
+	)
+	(wire
+		(pts
 			(xy 166.37 57.15) (xy 198.12 57.15)
 		)
 		(stroke
@@ -4435,6 +4495,16 @@
 			(type default)
 		)
 		(uuid "7ef371a9-8480-4b97-a4cb-e84629a3a683")
+	)
+	(wire
+		(pts
+			(xy 116.84 100.33) (xy 120.65 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8222c8c5-fc5c-4aa8-9cc9-7d6588a78c64")
 	)
 	(wire
 		(pts
@@ -4528,6 +4598,26 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 168.91) (xy 105.41 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd7ed98-3309-4657-9a35-c74c3d29905a")
+	)
+	(wire
+		(pts
+			(xy 119.38 77.47) (xy 120.65 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9de42808-1b8e-4a59-9a98-6d5b664bfb81")
+	)
+	(wire
+		(pts
 			(xy 48.26 121.92) (xy 60.96 121.92)
 		)
 		(stroke
@@ -4585,6 +4675,16 @@
 			(type default)
 		)
 		(uuid "a808a2ab-b39a-419d-9234-d2140a1714ef")
+	)
+	(wire
+		(pts
+			(xy 116.84 69.85) (xy 120.65 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa314f3b-da5d-41e3-b61a-f3a113d2d1d2")
 	)
 	(wire
 		(pts
@@ -4758,6 +4858,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 171.45) (xy 105.41 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6d9a039-b869-40cf-bfb9-c2da51ac9bde")
+	)
+	(wire
+		(pts
 			(xy 41.91 149.86) (xy 54.61 149.86)
 		)
 		(stroke
@@ -4888,6 +4998,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 163.83) (xy 105.41 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf5729c-8ad1-4ec7-bdd3-d99d2c675841")
+	)
+	(wire
+		(pts
 			(xy 166.37 133.35) (xy 166.37 134.62)
 		)
 		(stroke
@@ -4916,6 +5036,16 @@
 		)
 		(uuid "ff5667c3-b4d3-4c90-a308-31d55ba40258")
 	)
+	(label "FSPICLK"
+		(at 105.41 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0129d8b9-754b-4381-bb94-e13693b6c6c7")
+	)
 	(label "USB_D+"
 		(at 71.12 69.85 0)
 		(effects
@@ -4925,6 +5055,46 @@
 			(justify left bottom)
 		)
 		(uuid "1ffb1497-9e29-4dce-afcf-0a063e2ccbac")
+	)
+	(label "FSPID"
+		(at 105.41 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "206bd976-8009-409a-9a1b-cbf17d648d6d")
+	)
+	(label "Interrupt"
+		(at 105.41 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4200c72b-efd4-436a-a84d-c5856e2c0a3f")
+	)
+	(label "RADIO_RST"
+		(at 105.41 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a9006a6-9713-459f-a3f6-305933d728fb")
+	)
+	(label "FSPICLK"
+		(at 116.84 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a8b669a-fa71-4945-8fa5-7ccab9578284")
 	)
 	(label "USB_D+"
 		(at 120.65 115.57 180)
@@ -4936,6 +5106,26 @@
 		)
 		(uuid "6e9efbaa-f743-42c2-b42d-58fb04d65eb1")
 	)
+	(label "FSPICS0"
+		(at 105.41 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b037ff6-bb1e-445a-b668-63c37cea6918")
+	)
+	(label "FSPICS0"
+		(at 116.84 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "80d3a48b-fb34-4079-af71-fe4c77969cea")
+	)
 	(label "USB_D-"
 		(at 120.65 113.03 180)
 		(effects
@@ -4946,6 +5136,46 @@
 		)
 		(uuid "829092e3-0307-4ae1-82c8-c728d6b16aa3")
 	)
+	(label "Interrupt"
+		(at 116.84 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a07daa5b-fec6-40f1-b04c-087b337afa84")
+	)
+	(label "FSPIQ"
+		(at 105.41 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cac96a85-5bfe-4c1e-8ea4-cf0901b98225")
+	)
+	(label "RADIO_RST"
+		(at 119.38 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1f5f057-eb11-4d02-869b-139f2430c50c")
+	)
+	(label "FSPID"
+		(at 116.84 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e09efeaf-2dbc-4760-b18b-cc9a61be5760")
+	)
 	(label "USB_D-"
 		(at 71.12 64.77 0)
 		(effects
@@ -4955,6 +5185,16 @@
 			(justify left bottom)
 		)
 		(uuid "e6065d8b-2625-4713-a2d6-5b824bfe472e")
+	)
+	(label "FSPIQ"
+		(at 116.84 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6b2d8ed-a618-48c8-9ece-2a34b6f4b36a")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8942,7 +9182,7 @@
 		)
 	)
 	(sheet
-		(at 92.71 162.56)
+		(at 77.47 158.75)
 		(size 25.4 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8958,7 +9198,7 @@
 		)
 		(uuid "1c8bf498-9754-4bec-a707-8e930cfc3fe5")
 		(property "Sheetname" "Radio"
-			(at 92.71 161.8484 0)
+			(at 77.47 158.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8967,7 +9207,7 @@
 			)
 		)
 		(property "Sheetfile" "Radio.kicad_sch"
-			(at 92.71 180.9246 0)
+			(at 77.47 177.1146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8976,7 +9216,7 @@
 			)
 		)
 		(pin "Interupt GPIO Pin" input
-			(at 118.11 165.1 0)
+			(at 102.87 161.29 0)
 			(uuid "c1087236-126c-4316-b985-b45d636279e0")
 			(effects
 				(font
@@ -8986,7 +9226,7 @@
 			)
 		)
 		(pin "MISO" input
-			(at 118.11 167.64 0)
+			(at 102.87 163.83 0)
 			(uuid "829fbf01-eeff-4bfc-b38b-42ea870dca49")
 			(effects
 				(font
@@ -8996,7 +9236,7 @@
 			)
 		)
 		(pin "MOSI" input
-			(at 118.11 170.18 0)
+			(at 102.87 166.37 0)
 			(uuid "6c9ccf9f-909f-46b9-b787-fcf656243630")
 			(effects
 				(font
@@ -9006,7 +9246,7 @@
 			)
 		)
 		(pin "NSS{slash}Slave Select Pin" input
-			(at 118.11 172.72 0)
+			(at 102.87 168.91 0)
 			(uuid "f418fe79-8370-4eea-b657-0a8262ce3619")
 			(effects
 				(font
@@ -9016,7 +9256,7 @@
 			)
 		)
 		(pin "RST" input
-			(at 118.11 175.26 0)
+			(at 102.87 171.45 0)
 			(uuid "8801b654-fe19-4589-b64b-985a9d656b16")
 			(effects
 				(font
@@ -9026,7 +9266,7 @@
 			)
 		)
 		(pin "SCK" input
-			(at 118.11 177.8 0)
+			(at 102.87 173.99 0)
 			(uuid "b5dc9929-0f20-4cc0-baf2-651f6583f6f4")
 			(effects
 				(font
