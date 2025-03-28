@@ -1670,16 +1670,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 109.22) (xy 86.36 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3637916e-b6ad-490c-8197-dece613376e9")
-	)
-	(wire
-		(pts
 			(xy 80.01 99.06) (xy 91.44 99.06)
 		)
 		(stroke
@@ -1740,7 +1730,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 109.22) (xy 86.36 109.22)
+			(xy 91.44 109.22) (xy 87.63 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2012,7 +2002,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 86.36 113.03 270)
+		(at 87.63 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
