@@ -4370,6 +4370,36 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 137.16) (xy 43.18 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f26e57-358a-45e5-aafa-ad8ac5dc9415")
+	)
+	(wire
+		(pts
+			(xy 119.38 135.89) (xy 120.65 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1e49a0-406d-4a5f-a788-4d80fc759060")
+	)
+	(wire
+		(pts
+			(xy 166.37 97.79) (xy 167.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42913dc3-a07e-4e0e-91b4-b88f8659dda8")
+	)
+	(wire
+		(pts
 			(xy 184.15 54.61) (xy 191.77 54.61)
 		)
 		(stroke
@@ -4407,6 +4437,16 @@
 			(type default)
 		)
 		(uuid "4ad9eaae-e9e9-401f-acbc-6ca9886facd2")
+	)
+	(wire
+		(pts
+			(xy 41.91 154.94) (xy 43.18 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50409589-3e18-409e-998c-24db62b5b4b5")
 	)
 	(wire
 		(pts
@@ -4460,6 +4500,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 139.7) (xy 43.18 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e698ad2-95b5-4b96-a772-adc08d83261d")
+	)
+	(wire
+		(pts
 			(xy 207.01 139.7) (xy 207.01 138.43)
 		)
 		(stroke
@@ -4477,6 +4527,16 @@
 			(type default)
 		)
 		(uuid "5ff0cbc0-6137-45b0-8313-f8c03bb93dc4")
+	)
+	(wire
+		(pts
+			(xy 41.91 121.92) (xy 43.18 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "603574d9-492f-4c2b-a6ac-5f3f1ff4b9d2")
 	)
 	(wire
 		(pts
@@ -4567,6 +4627,16 @@
 			(type default)
 		)
 		(uuid "8222c8c5-fc5c-4aa8-9cc9-7d6588a78c64")
+	)
+	(wire
+		(pts
+			(xy 41.91 124.46) (xy 43.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8384a417-5ec8-4936-b8ca-b2e4670e876d")
 	)
 	(wire
 		(pts
@@ -4830,6 +4900,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 152.4) (xy 43.18 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b936abc3-4dff-4e12-872b-da22f4bb041d")
+	)
+	(wire
+		(pts
 			(xy 170.18 52.07) (xy 172.72 52.07)
 		)
 		(stroke
@@ -4937,6 +5017,16 @@
 			(type default)
 		)
 		(uuid "d5a87e04-a889-42bc-a1f5-a579484d69ef")
+	)
+	(wire
+		(pts
+			(xy 166.37 95.25) (xy 167.64 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5dca19f-dcc8-4bc9-b8fd-b83879eccc55")
 	)
 	(wire
 		(pts
@@ -5148,6 +5238,16 @@
 		)
 		(uuid "0129d8b9-754b-4381-bb94-e13693b6c6c7")
 	)
+	(label "Sense 2"
+		(at 43.18 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01539617-bf97-4fb1-a617-bc32c9c5b1df")
+	)
 	(label "SCL"
 		(at 161.29 167.64 0)
 		(effects
@@ -5178,6 +5278,16 @@
 		)
 		(uuid "206bd976-8009-409a-9a1b-cbf17d648d6d")
 	)
+	(label "Sense 1"
+		(at 43.18 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30ee457f-2344-455e-9235-4b6aac6f45aa")
+	)
 	(label "Interrupt"
 		(at 105.41 161.29 0)
 		(effects
@@ -5188,6 +5298,16 @@
 		)
 		(uuid "4200c72b-efd4-436a-a84d-c5856e2c0a3f")
 	)
+	(label "Pyro GPIO 2"
+		(at 167.64 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45c76172-3abf-4d22-839a-dd336ddabd6f")
+	)
 	(label "RADIO_RST"
 		(at 105.41 171.45 0)
 		(effects
@@ -5197,6 +5317,26 @@
 			(justify left bottom)
 		)
 		(uuid "4a9006a6-9713-459f-a3f6-305933d728fb")
+	)
+	(label "Pyro GPIO 1"
+		(at 43.18 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53b3785a-951f-404e-9127-705f1a77cd00")
+	)
+	(label "Pyro GPIO 1"
+		(at 119.38 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "68779671-cf00-4f74-a3ec-3c80527c8e6d")
 	)
 	(label "FSPICLK"
 		(at 116.84 97.79 0)
@@ -5238,6 +5378,16 @@
 		)
 		(uuid "7b037ff6-bb1e-445a-b668-63c37cea6918")
 	)
+	(label "Pyro GPIO 3"
+		(at 167.64 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7df74cab-b83b-4d9c-91bb-b38e41e8274e")
+	)
 	(label "FSPICS0"
 		(at 116.84 92.71 0)
 		(effects
@@ -5258,6 +5408,16 @@
 		)
 		(uuid "829092e3-0307-4ae1-82c8-c728d6b16aa3")
 	)
+	(label "Sense 2"
+		(at 120.65 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96d18b3d-6bf2-4bbc-8275-d27dbbeb16c2")
+	)
 	(label "Interrupt"
 		(at 116.84 69.85 0)
 		(effects
@@ -5267,6 +5427,26 @@
 			(justify left bottom)
 		)
 		(uuid "a07daa5b-fec6-40f1-b04c-087b337afa84")
+	)
+	(label "Sense 1"
+		(at 120.65 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0bf1ba0-2cdd-45fc-b55b-64fb68838bc2")
+	)
+	(label "Pyro GPIO 2"
+		(at 43.18 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7345522-a7a6-4c71-aae4-000446fc766f")
 	)
 	(label "SDA"
 		(at 161.29 170.18 0)
@@ -5298,6 +5478,26 @@
 		)
 		(uuid "d1f5f057-eb11-4d02-869b-139f2430c50c")
 	)
+	(label "Pyro GPIO 3"
+		(at 43.18 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da5990c4-a12e-4a2d-ac6c-4e5379392504")
+	)
+	(label "Sense 3"
+		(at 120.65 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "daa0c5f7-44d4-4105-b9f2-550755f4c50a")
+	)
 	(label "FSPID"
 		(at 116.84 95.25 0)
 		(effects
@@ -5327,6 +5527,16 @@
 			(justify left bottom)
 		)
 		(uuid "e6b2d8ed-a618-48c8-9ece-2a34b6f4b36a")
+	)
+	(label "Sense 3"
+		(at 43.18 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9a2a240-6de8-4bcf-b2d2-f522dd956c01")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9996,7 +10206,7 @@
 	)
 	(sheet
 		(at 147.32 162.56)
-		(size 12.7 12.7)
+		(size 12.7 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10020,7 +10230,7 @@
 			)
 		)
 		(property "Sheetfile" "442_Sensors.kicad_sch"
-			(at 147.32 175.8446 0)
+			(at 147.32 178.3846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10061,6 +10271,16 @@
 		(pin "Tx" input
 			(at 160.02 172.72 0)
 			(uuid "70115bc2-a6c8-445d-b2fc-8780499baca1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPS_Reset" input
+			(at 160.02 175.26 0)
+			(uuid "e69e1b9e-f0b9-43ca-963e-b93ead33636e")
 			(effects
 				(font
 					(size 1.27 1.27)
