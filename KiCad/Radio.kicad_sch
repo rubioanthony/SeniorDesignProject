@@ -582,7 +582,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -603,7 +603,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -629,7 +629,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -647,7 +647,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -685,7 +685,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1311,7 +1311,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+3V3")
 		(at 133.35 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1319,8 +1319,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "88136ee7-3630-444b-b3ac-93e7af22efb7")
-		(property "Reference" "#PWR041"
+		(uuid "7368fa8c-7c87-48fa-9e21-15f0e33500a3")
+		(property "Reference" "#PWR038"
 			(at 133.35 71.12 0)
 			(effects
 				(font
@@ -1329,7 +1329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+3V3"
 			(at 133.35 62.23 0)
 			(effects
 				(font
@@ -1355,7 +1355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 133.35 67.31 0)
 			(effects
 				(font
@@ -1365,18 +1365,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d0a4e4c9-7345-4759-a376-8a3371eadde0")
+			(uuid "fda8bec1-08bb-47d8-8637-9a02adc250bd")
 		)
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/1c8bf498-9754-4bec-a707-8e930cfc3fe5"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/760e4be0-0457-4cde-a6ec-d56d0abadbc7"
-					(reference "#PWR01")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
