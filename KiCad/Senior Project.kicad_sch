@@ -4470,6 +4470,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 74.93) (xy 120.65 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cec9e34-b5d5-4da6-99a9-67f1195072a6")
+	)
+	(wire
+		(pts
 			(xy 64.77 67.31) (xy 64.77 69.85)
 		)
 		(stroke
@@ -5040,6 +5050,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 175.26) (xy 161.29 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b344381b-918d-4e9e-a8ea-741735db4672")
+	)
+	(wire
+		(pts
 			(xy 212.09 143.51) (xy 214.63 143.51)
 		)
 		(stroke
@@ -5568,6 +5588,16 @@
 		)
 		(uuid "829092e3-0307-4ae1-82c8-c728d6b16aa3")
 	)
+	(label "GPS_Reset"
+		(at 115.57 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90820cfe-459b-4320-b207-aa7e9457e8a9")
+	)
 	(label "Sense 2"
 		(at 120.65 107.95 180)
 		(effects
@@ -5697,6 +5727,16 @@
 			(justify left bottom)
 		)
 		(uuid "f9a2a240-6de8-4bcf-b2d2-f522dd956c01")
+	)
+	(label "GPS_Reset"
+		(at 161.29 175.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9f7ee51-b8ab-4f92-bcc3-22d34b7b159d")
 	)
 	(symbol
 		(lib_id "power:GND")
