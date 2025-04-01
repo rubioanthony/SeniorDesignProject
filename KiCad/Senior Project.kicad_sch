@@ -4227,6 +4227,18 @@
 		(uuid "0a954a2f-48f0-47d0-a8bc-c74c623bd919")
 	)
 	(no_connect
+		(at 166.37 105.41)
+		(uuid "18bd5115-7300-4292-8e40-c9c3a2800cba")
+	)
+	(no_connect
+		(at 120.65 72.39)
+		(uuid "211dc1cf-32dc-460b-9da8-6ae8651acee3")
+	)
+	(no_connect
+		(at 166.37 102.87)
+		(uuid "23403ee1-fd8d-46f5-ae3c-b9b5bdc105fc")
+	)
+	(no_connect
 		(at 166.37 87.63)
 		(uuid "23fe22f6-d4d7-45df-bb17-e83ed6c5cb3f")
 	)
@@ -4235,12 +4247,32 @@
 		(uuid "27f96063-82c0-4a14-9e6f-53949dc34b59")
 	)
 	(no_connect
+		(at 120.65 85.09)
+		(uuid "312a4055-1d1a-49f2-bdda-72143e732918")
+	)
+	(no_connect
+		(at 166.37 110.49)
+		(uuid "34ef4714-4835-4618-a3d7-9fe42eb70556")
+	)
+	(no_connect
 		(at 64.77 80.01)
 		(uuid "42e9ea21-530d-434f-9516-9d4ede8cf8c7")
 	)
 	(no_connect
+		(at 166.37 115.57)
+		(uuid "622631b9-7c71-4223-ad46-85f6bb997f33")
+	)
+	(no_connect
+		(at 120.65 82.55)
+		(uuid "640eee73-ac04-4dd0-8527-db7c0e715787")
+	)
+	(no_connect
 		(at 120.65 125.73)
 		(uuid "64b2d58e-7e6c-4a9e-be6f-b64e38902f09")
+	)
+	(no_connect
+		(at 166.37 125.73)
+		(uuid "689f69f0-eac8-48c4-ab94-ae51b170d7ef")
 	)
 	(no_connect
 		(at 166.37 72.39)
@@ -4267,16 +4299,36 @@
 		(uuid "9abd8e1b-45fe-4bb8-bc24-af3ef4f6cdd0")
 	)
 	(no_connect
+		(at 166.37 107.95)
+		(uuid "9ec10682-f79c-4f2a-8a56-fd8518683cf7")
+	)
+	(no_connect
 		(at 166.37 77.47)
 		(uuid "bb53577a-beb0-4b60-abdf-ad110e85fc13")
+	)
+	(no_connect
+		(at 120.65 80.01)
+		(uuid "cf75b118-c4de-4831-b7b8-87499792fb6e")
+	)
+	(no_connect
+		(at 166.37 118.11)
+		(uuid "d064c9ed-df18-4b5d-b972-6919dba67c97")
 	)
 	(no_connect
 		(at 166.37 80.01)
 		(uuid "db93972d-2c4e-4d4b-92ca-01714a40bd1f")
 	)
 	(no_connect
+		(at 120.65 118.11)
+		(uuid "f08e0547-ccb0-4bf0-ba41-b2e2d379dbfa")
+	)
+	(no_connect
 		(at 166.37 82.55)
 		(uuid "f15b5e17-ab2f-4a5e-b1f0-944a7b1e67e0")
+	)
+	(no_connect
+		(at 166.37 123.19)
+		(uuid "fa1a9d14-1801-4604-8e1a-2516f1905d2c")
 	)
 	(wire
 		(pts
@@ -5050,7 +5102,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 175.26) (xy 161.29 175.26)
+			(xy 160.02 172.72) (xy 161.29 172.72)
 		)
 		(stroke
 			(width 0)
@@ -5729,7 +5781,7 @@
 		(uuid "f9a2a240-6de8-4bcf-b2d2-f522dd956c01")
 	)
 	(label "GPS_Reset"
-		(at 161.29 175.26 0)
+		(at 161.29 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10507,16 +10559,6 @@
 				(justify left top)
 			)
 		)
-		(pin "Rx" input
-			(at 160.02 165.1 0)
-			(uuid "9f23fcf3-c1e4-4d12-acc3-0155bd66a8fb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SCL" input
 			(at 160.02 167.64 0)
 			(uuid "c7e589dc-a062-4645-a1e7-058160097d97")
@@ -10537,18 +10579,8 @@
 				(justify right)
 			)
 		)
-		(pin "Tx" input
-			(at 160.02 172.72 0)
-			(uuid "70115bc2-a6c8-445d-b2fc-8780499baca1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GPS_Reset" input
-			(at 160.02 175.26 0)
+			(at 160.02 172.72 0)
 			(uuid "e69e1b9e-f0b9-43ca-963e-b93ead33636e")
 			(effects
 				(font
