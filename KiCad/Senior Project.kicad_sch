@@ -4900,6 +4900,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 72.39) (xy 120.65 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cfcd20-0749-4c08-bf3d-1ed44f747abb")
+	)
+	(wire
+		(pts
 			(xy 102.87 168.91) (xy 105.41 168.91)
 		)
 		(stroke
@@ -5097,6 +5107,16 @@
 			(type default)
 		)
 		(uuid "c2433989-7616-4834-81f4-48024d5db770")
+	)
+	(wire
+		(pts
+			(xy 160.02 172.72) (xy 161.29 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c445075e-324b-42dc-a831-4aacca847c4a")
 	)
 	(wire
 		(pts
@@ -5488,6 +5508,16 @@
 		)
 		(uuid "53b3785a-951f-404e-9127-705f1a77cd00")
 	)
+	(label "GPS_Reset"
+		(at 119.38 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c620bb4-9425-41ad-8446-d60c70aa892e")
+	)
 	(label "Pyro GPIO 1"
 		(at 119.38 135.89 180)
 		(effects
@@ -5567,6 +5597,16 @@
 			(justify right bottom)
 		)
 		(uuid "829092e3-0307-4ae1-82c8-c728d6b16aa3")
+	)
+	(label "GPS_Reset"
+		(at 161.29 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "882dce08-142d-47bb-8b13-e01ba659bee3")
 	)
 	(label "Sense 2"
 		(at 120.65 107.95 180)
@@ -10467,16 +10507,6 @@
 				(justify left top)
 			)
 		)
-		(pin "Rx" input
-			(at 160.02 165.1 0)
-			(uuid "9f23fcf3-c1e4-4d12-acc3-0155bd66a8fb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SCL" input
 			(at 160.02 167.64 0)
 			(uuid "c7e589dc-a062-4645-a1e7-058160097d97")
@@ -10497,18 +10527,8 @@
 				(justify right)
 			)
 		)
-		(pin "Tx" input
-			(at 160.02 172.72 0)
-			(uuid "70115bc2-a6c8-445d-b2fc-8780499baca1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GPS_Reset" input
-			(at 160.02 175.26 0)
+			(at 160.02 172.72 0)
 			(uuid "e69e1b9e-f0b9-43ca-963e-b93ead33636e")
 			(effects
 				(font
