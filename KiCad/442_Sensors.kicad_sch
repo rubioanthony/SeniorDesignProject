@@ -2674,6 +2674,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 142.24 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f09e2a9e-6779-4d1b-b25f-b62f948e5215")
 		)
@@ -2788,6 +2796,14 @@
 				)
 				(justify bottom)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C1864162"
+			(at 107.95 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "14"
@@ -3060,6 +3076,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C97627"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ca5abc98-1e14-4236-9fde-53431ebbb2cf")
 		)
@@ -3251,7 +3275,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SAM-M8Q"
+		(property "Value" "SAM-M10Q"
 			(at 183.7533 91.44 0)
 			(effects
 				(font
@@ -3285,6 +3309,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "19"
@@ -3409,6 +3441,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 133.35 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3555,6 +3595,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 173.99 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3768,6 +3816,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 142.24 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

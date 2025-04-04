@@ -895,6 +895,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C18216"
+			(at 180.34 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3952fe5a-2647-485a-8be1-6881a8df3b97")
 		)
@@ -938,7 +946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 206.7052 62.23 0)
 			(effects
 				(font
@@ -963,6 +971,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C15525"
+			(at 205.74 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1102,6 +1118,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 195.58 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "952801cc-51ed-407c-9365-e5cf00531478")
 		)
@@ -1202,7 +1226,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 179.07 59.6899 0)
 			(effects
 				(font
@@ -1236,6 +1260,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 175.26 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1339,7 +1371,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 189.23 59.6899 0)
 			(effects
 				(font
@@ -1373,6 +1405,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 185.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

@@ -932,16 +932,16 @@
 		(uuid "73a7549d-0fdd-496c-a6b0-f5f15a0fc808")
 	)
 	(junction
-		(at 175.26 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "798d1923-8516-400f-b0a2-2c62fe7a8d05")
-	)
-	(junction
 		(at 143.51 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9721e42e-3ebb-4997-91d0-36900ba0c168")
+	)
+	(junction
+		(at 175.26 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "974e0894-e87d-4692-a23e-f4f4a6d17b4b")
 	)
 	(junction
 		(at 175.26 55.88)
@@ -964,16 +964,6 @@
 			(type default)
 		)
 		(uuid "15e17a55-8958-4917-8b87-8c6cb0b0bc16")
-	)
-	(wire
-		(pts
-			(xy 175.26 62.23) (xy 175.26 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16fe2409-d08f-488f-8be9-7d581365d7d9")
 	)
 	(wire
 		(pts
@@ -1057,7 +1047,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 63.5) (xy 175.26 64.77)
+			(xy 175.26 62.23) (xy 175.26 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1124,6 +1114,16 @@
 			(type default)
 		)
 		(uuid "9d77da72-48da-463a-a79e-abdb635dbe50")
+	)
+	(wire
+		(pts
+			(xy 175.26 63.5) (xy 175.26 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8db203d-58ca-47ac-8ac0-9177a2bdc78a")
 	)
 	(wire
 		(pts
@@ -1352,6 +1352,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C40256"
+			(at 123.19 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "f1590817-3cd8-435e-8b14-da82ad95e6fc")
 		)
@@ -1447,6 +1455,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C86423"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9ac810eb-dacc-4cac-9e73-dff7fefb45dd")
 		)
@@ -1496,7 +1512,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 97.4852 69.85 0)
 			(effects
 				(font
@@ -1521,6 +1537,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C15525"
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -1671,6 +1695,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C59461"
+			(at 175.26 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8d02748d-4da9-41ac-b162-259f03d89d2b")
 		)
@@ -1747,7 +1779,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "69f6c32c-8be2-4c9b-919c-d8e3cc21e271")
+			(uuid "69f6c32c-8be2-4c9b-919c-d8e3cc21e272")
 		)
 		(instances
 			(project ""
