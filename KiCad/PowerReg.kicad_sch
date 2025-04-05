@@ -306,130 +306,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_Switching:TPS62162DSG"
 			(pin_names
 				(offset 0.254)
@@ -805,7 +681,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+BATT"
+		(symbol "power:+VDC"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -818,7 +694,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -826,8 +702,8 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
+			(property "Value" "+VDC"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -852,7 +728,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(property "Description" "Power symbol creates a global label with name \"+VDC\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -861,7 +737,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global power battery"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -870,13 +746,24 @@
 					(hide yes)
 				)
 			)
-			(symbol "+BATT_0_1"
+			(symbol "+VDC_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.143 3.175) (xy 1.143 3.175)
 					)
 					(stroke
-						(width 0)
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -885,10 +772,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.032) (xy 0 4.318)
 					)
 					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -897,7 +784,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -908,7 +795,7 @@
 					)
 				)
 			)
-			(symbol "+BATT_1_1"
+			(symbol "+VDC_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1033,12 +920,6 @@
 		)
 	)
 	(junction
-		(at 100.33 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "49051d85-f33b-40a4-8d18-bf4c0c78b346")
-	)
-	(junction
 		(at 123.19 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1057,10 +938,10 @@
 		(uuid "798d1923-8516-400f-b0a2-2c62fe7a8d05")
 	)
 	(junction
-		(at 143.51 59.69)
+		(at 100.33 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7a3f0525-770a-40c0-9607-92891845b3ba")
+		(uuid "8a2fefcf-9e85-42b4-8ec9-871360155b9c")
 	)
 	(junction
 		(at 143.51 57.15)
@@ -1103,16 +984,6 @@
 			(type default)
 		)
 		(uuid "172c6ed2-0adf-4970-87a2-40dedabe50af")
-	)
-	(wire
-		(pts
-			(xy 143.51 71.12) (xy 143.51 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "223ed813-e33d-4369-81ff-41cae3147104")
 	)
 	(wire
 		(pts
@@ -1246,16 +1117,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 67.31) (xy 113.03 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9024f80b-9393-4e69-b28d-762276570496")
-	)
-	(wire
-		(pts
 			(xy 143.51 57.15) (xy 143.51 59.69)
 		)
 		(stroke
@@ -1303,173 +1164,6 @@
 			(type default)
 		)
 		(uuid "fb4420a5-b54c-4aaf-b6f4-35ec8ca5c354")
-	)
-	(label "PG"
-		(at 143.51 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2479b872-5459-4080-8c4a-fbc7d046f9f0")
-	)
-	(label "PG"
-		(at 111.76 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c868bb73-790e-47b1-b0ab-ea39f1dedde5")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 143.51 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "007a836b-17ff-41a0-b94a-2d90d89f4eba")
-		(property "Reference" "R6"
-			(at 146.05 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 146.05 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 141.732 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 143.51 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4f444fe-3754-4d37-b4c3-8fd858b7280d")
-		)
-		(pin "2"
-			(uuid "c3f560d2-ea5a-45d3-a136-32690a1d36fe")
-		)
-		(instances
-			(project "PowerReg"
-				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/bf62daab-1cf5-4742-a85c-ffd3166ecdf9"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-			(project "PowerReg"
-				(path "/69b89bc5-ef32-4b14-b574-fcede0ff2705"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 96.52 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "08c0877e-31a1-46a9-99e0-b05a2b54aa13")
-		(property "Reference" "#PWR033"
-			(at 96.52 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 93.98 52.324 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 96.52 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a518798f-b4b3-4199-88b2-96bb06a6a1d2")
-		)
-		(instances
-			(project ""
-				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/bf62daab-1cf5-4742-a85c-ffd3166ecdf9"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/69b89bc5-ef32-4b14-b574-fcede0ff2705"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Regulator_Switching:TPS62162DSG")
@@ -1568,6 +1262,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+VDC")
+		(at 100.33 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57c88b74-52cc-4e41-843b-5bbc2792806b")
+		(property "Reference" "#PWR033"
+			(at 100.33 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VDC"
+			(at 100.33 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+VDC\""
+			(at 100.33 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ec64e20-c95a-4092-b356-d87bf13be34f")
+		)
+		(instances
+			(project ""
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/bf62daab-1cf5-4742-a85c-ffd3166ecdf9"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 139.7 57.15 90)
 		(unit 1)
@@ -1636,6 +1396,73 @@
 			(project "PowerReg"
 				(path "/69b89bc5-ef32-4b14-b574-fcede0ff2705"
 					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77494bc2-3486-4b28-85d3-12c6f37c558f")
+		(property "Reference" "#PWR040"
+			(at 106.68 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 67.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4c2245e-c609-46e4-9f5e-b36dec749b4a")
+		)
+		(instances
+			(project ""
+				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/bf62daab-1cf5-4742-a85c-ffd3166ecdf9"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -1790,17 +1617,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 100.33 57.15 0)
+		(lib_id "power:+VDC")
+		(at 96.52 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7dc112bb-5b10-467a-8990-7f70e174a747")
+		(uuid "80e3b557-a239-461f-984b-185c6b5028da")
 		(property "Reference" "#PWR034"
-			(at 100.33 60.96 0)
+			(at 96.52 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1808,8 +1635,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+BATT"
-			(at 100.33 52.07 0)
+		(property "Value" "+VDC"
+			(at 96.52 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1817,7 +1644,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 57.15 0)
+			(at 96.52 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1826,7 +1653,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 57.15 0)
+			(at 96.52 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1834,8 +1661,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 100.33 57.15 0)
+		(property "Description" "Power symbol creates a global label with name \"+VDC\""
+			(at 96.52 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,18 +1671,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ccb741f-f9dc-483c-831f-cbf5bee55da0")
+			(uuid "32226aef-a8b0-4fe7-ab4a-9af886c09f00")
 		)
 		(instances
 			(project ""
 				(path "/16f8cce7-467e-4342-b55a-00af81cd6f69/bf62daab-1cf5-4742-a85c-ffd3166ecdf9"
 					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/69b89bc5-ef32-4b14-b574-fcede0ff2705"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)

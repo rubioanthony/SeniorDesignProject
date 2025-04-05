@@ -7204,7 +7204,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "20p"
 			(at 189.23 139.446 90)
 			(effects
 				(font
@@ -7272,7 +7272,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "15p"
 			(at 214.6363 134.62 90)
 			(effects
 				(font
@@ -9429,7 +9429,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "24 nF"
 			(at 170.18 135.89 90)
 			(effects
 				(font
@@ -9696,7 +9696,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "20pf"
 			(at 189.2363 124.46 90)
 			(effects
 				(font
@@ -10035,7 +10035,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "15p"
 			(at 184.15 148.5835 0)
 			(effects
 				(font
