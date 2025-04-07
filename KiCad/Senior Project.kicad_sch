@@ -5097,16 +5097,6 @@
 		)
 		(uuid "9976b7f3-fb09-44a8-b32a-72df05683428")
 	)
-	(label "Sense 3"
-		(at 196.85 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9a77d095-7f8c-488a-8c0b-6bd82787074b")
-	)
 	(label "MTD0"
 		(at 95.25 73.66 0)
 		(effects
@@ -5137,16 +5127,6 @@
 		)
 		(uuid "a7345522-a7a6-4c71-aae4-000446fc766f")
 	)
-	(label "GPS_Reset"
-		(at 196.85 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac446a61-c025-4344-91c3-99b0b678e551")
-	)
 	(label "MTDI"
 		(at 95.25 76.2 0)
 		(effects
@@ -5156,6 +5136,16 @@
 			(justify left bottom)
 		)
 		(uuid "ae3be692-0315-45f1-a440-656daecf902b")
+	)
+	(label "Sense 3"
+		(at 196.85 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aeefc1b4-1c83-4b3c-8748-27f16880edc6")
 	)
 	(label "RADIO_RST"
 		(at 196.85 106.68 0)
@@ -5186,6 +5176,16 @@
 			(justify left bottom)
 		)
 		(uuid "b66712d1-e797-4d78-9637-2c4eaf2d0e34")
+	)
+	(label "GPS_Reset"
+		(at 196.85 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9911775-1389-4e43-87bc-78e17c8624a3")
 	)
 	(label "UOTXD"
 		(at 243.84 118.11 0)
@@ -7432,7 +7432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-S3-WROOM-1"
+		(property "Footprint" "RF_Module:ESP32-S3-WROOM-1U"
 			(at 151.13 139.7 0)
 			(effects
 				(font
