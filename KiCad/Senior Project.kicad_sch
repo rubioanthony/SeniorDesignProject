@@ -3918,6 +3918,10 @@
 		(uuid "42e9ea21-530d-434f-9516-9d4ede8cf8c7")
 	)
 	(no_connect
+		(at 248.92 101.6)
+		(uuid "624ac060-f2a4-4960-9117-aed18812f68e")
+	)
+	(no_connect
 		(at 102.87 127)
 		(uuid "657c0356-b026-4a48-8d5f-64acaa0649b7")
 	)
@@ -4042,16 +4046,6 @@
 			(type default)
 		)
 		(uuid "11ff1918-4cf4-46df-aadc-3bd6d320cca4")
-	)
-	(wire
-		(pts
-			(xy 95.25 73.66) (xy 102.87 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17317a41-f31d-4ade-8081-5843852eb016")
 	)
 	(wire
 		(pts
@@ -4462,6 +4456,16 @@
 			(type default)
 		)
 		(uuid "8c1bacf7-335e-44e2-aa13-c0bbe8dcb37a")
+	)
+	(wire
+		(pts
+			(xy 95.25 73.66) (xy 102.87 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f7b9612-75b5-4169-91c3-111abf2c7d88")
 	)
 	(wire
 		(pts
@@ -5103,6 +5107,16 @@
 		)
 		(uuid "9a77d095-7f8c-488a-8c0b-6bd82787074b")
 	)
+	(label "MTD0"
+		(at 95.25 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c98f777-6455-4bff-85b1-becb7d767e31")
+	)
 	(label "MTCK"
 		(at 95.25 71.12 0)
 		(effects
@@ -5123,7 +5137,7 @@
 		)
 		(uuid "a7345522-a7a6-4c71-aae4-000446fc766f")
 	)
-	(label "GPS_RESET"
+	(label "GPS_Reset"
 		(at 196.85 88.9 0)
 		(effects
 			(font
@@ -5162,16 +5176,6 @@
 			(justify left bottom)
 		)
 		(uuid "b5920195-6e45-4b9c-afbd-e77de0b14512")
-	)
-	(label "MTDO"
-		(at 95.25 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5a1384a-3a53-4124-984b-0a1e5d9d3394")
 	)
 	(label "MTMS"
 		(at 95.25 78.74 0)
@@ -5283,7 +5287,7 @@
 		)
 		(uuid "f1553344-0e51-4c5f-886a-386f6a9f124b")
 	)
-	(label "FSPICSO"
+	(label "FSPICS0"
 		(at 196.85 96.52 0)
 		(effects
 			(font
@@ -7682,7 +7686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 96.012 41.91 90)
 			(effects
 				(font
