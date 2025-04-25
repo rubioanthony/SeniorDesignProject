@@ -6,4 +6,5 @@
   (lib (name "OSTVN02A150")(type "KiCad")(uri "${KIPRJMOD}/footprints/OSTVN02A150.pretty")(options "")(descr ""))
   (lib (name "OSTVN06A150")(type "KiCad")(uri "${KIPRJMOD}/footprints/OSTVN06A150.pretty")(options "")(descr ""))
   (lib (name "FC-135")(type "KiCad")(uri "${KIPRJMOD}/footprints/FC_135.pretty")(options "")(descr ""))
+  (lib (name "footprints")(type "KiCad")(uri "/Users/anthonyrubio/Homework/OSU/KiCADv6 2/footprints.pretty")(options "")(descr ""))
 )

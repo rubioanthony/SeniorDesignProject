@@ -8,4 +8,5 @@
   (lib (name "CON-SMA-EDGE-S")(type "KiCad")(uri "${KIPRJMOD}/symbols/CON-SMA-EDGE-S.kicad_sym")(options "")(descr ""))
   (lib (name "FC_135")(type "KiCad")(uri "${KIPRJMOD}/symbols/FC_135.kicad_sym")(options "")(descr ""))
   (lib (name "NR3015T-2R2M")(type "KiCad")(uri "${KIPRJMOD}/symbols/NR3015T-2R2M.kicad_sym")(options "")(descr ""))
+  (lib (name "JST_Connector")(type "KiCad")(uri "/Users/anthonyrubio/Homework/OSU/KiCADv6 2/2025-04-25_19-45-28.kicad_sym")(options "")(descr ""))
 )
