@@ -1106,6 +1106,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 154.94 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2d5b2746-d3c9-4a67-ae15-e5c10d948a7b")
 		)
@@ -1245,6 +1253,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 133.35 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "10"
