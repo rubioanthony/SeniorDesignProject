@@ -129,7 +129,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:IRLML0030"
+		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(hide yes)
 			)
@@ -145,7 +145,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "IRLML0030"
+			(property "Value" "AO3400A"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -165,7 +165,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -175,7 +175,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "5.3A Id, 30V Vds, 27mOhm Rds, N-Channel HEXFET Power MOSFET, SOT-23"
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -184,7 +184,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel HEXFET MOSFET Logic-Level"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -202,7 +202,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IRLML0030_0_1"
+			(symbol "AO3400A_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -369,7 +369,7 @@
 					)
 				)
 			)
-			(symbol "IRLML0030_1_1"
+			(symbol "AO3400A_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -877,7 +877,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "510k"
 			(at 160.02 83.8199 0)
 			(effects
 				(font
@@ -913,12 +913,13 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25779"
+		(property "LCSC" "C11616"
 			(at 157.48 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -1103,7 +1104,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLML0030")
+		(lib_id "Transistor_FET:AO3400A")
 		(at 144.78 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1112,7 +1113,7 @@
 		(dnp no)
 		(uuid "81dba7f1-cba7-48ec-97f7-c215fe06607f")
 		(property "Reference" "Q3"
-			(at 151.13 92.7099 0)
+			(at 149.352 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1120,8 +1121,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLML0030"
-			(at 151.13 95.2499 0)
+		(property "Value" "AO3400A"
+			(at 147.574 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1140,7 +1141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 149.86 97.79 0)
 			(effects
 				(font
@@ -1150,7 +1151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5.3A Id, 30V Vds, 27mOhm Rds, N-Channel HEXFET Power MOSFET, SOT-23"
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 			(at 144.78 93.98 0)
 			(effects
 				(font
@@ -1290,7 +1291,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7f8dfba-0e14-40de-8057-a5a50ade0f9c")
 		(property "Reference" "R19"
-			(at 160.02 93.9799 0)
+			(at 160.02 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1298,8 +1299,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.1k"
-			(at 160.02 96.5199 0)
+		(property "Value" "33k"
+			(at 160.02 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1334,13 +1335,14 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25905"
+		(property "LCSC" "C25779"
 			(at 160.02 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(pin "2"

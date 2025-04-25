@@ -5534,32 +5534,12 @@
 		(uuid "25f9dc61-6de3-46b8-993c-72cbc664cdd6")
 	)
 	(no_connect
-		(at 162.56 125.73)
-		(uuid "27f96063-82c0-4a14-9e6f-53949dc34b59")
-	)
-	(no_connect
 		(at 64.77 80.01)
 		(uuid "42e9ea21-530d-434f-9516-9d4ede8cf8c7")
 	)
 	(no_connect
-		(at 162.56 128.27)
-		(uuid "64b2d58e-7e6c-4a9e-be6f-b64e38902f09")
-	)
-	(no_connect
 		(at 208.28 74.93)
 		(uuid "6ac47e28-7a93-4265-8a30-6639fa2e7a0a")
-	)
-	(no_connect
-		(at 162.56 135.89)
-		(uuid "74a30cdd-9e0a-4351-8a38-0af996c6359e")
-	)
-	(no_connect
-		(at 162.56 130.81)
-		(uuid "7d5b10ac-1b88-4267-a170-f46c6fe5444c")
-	)
-	(no_connect
-		(at 162.56 133.35)
-		(uuid "819f73bf-fd3d-4e2d-a581-4e01fcc934d6")
 	)
 	(no_connect
 		(at 64.77 77.47)
@@ -5703,7 +5683,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 201.93) (xy 196.85 201.93)
+			(xy 187.96 205.74) (xy 196.85 205.74)
 		)
 		(stroke
 			(width 0)
@@ -6093,7 +6073,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 138.43) (xy 162.56 138.43)
+			(xy 154.94 138.43) (xy 162.56 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6453,7 +6433,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 204.47) (xy 187.96 204.47)
+			(xy 196.85 208.28) (xy 187.96 208.28)
 		)
 		(stroke
 			(width 0)
@@ -7043,7 +7023,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 209.55) (xy 196.85 209.55)
+			(xy 187.96 212.09) (xy 196.85 212.09)
 		)
 		(stroke
 			(width 0)
@@ -7313,6 +7293,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 200.66) (xy 196.85 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a359a4-21e0-45c0-8871-744f81010406")
+	)
+	(wire
+		(pts
 			(xy 64.77 62.23) (xy 64.77 64.77)
 		)
 		(stroke
@@ -7400,6 +7390,16 @@
 			(type default)
 		)
 		(uuid "f0ed301d-000b-4dd6-8806-4f5028a868dc")
+	)
+	(wire
+		(pts
+			(xy 162.56 125.73) (xy 154.94 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2c83897-0141-4333-ab8d-d5efedb06e27")
 	)
 	(wire
 		(pts
@@ -7581,8 +7581,18 @@
 		)
 		(uuid "01539617-bf97-4fb1-a617-bc32c9c5b1df")
 	)
+	(label "~{HIGH_G_CS}"
+		(at 196.85 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01ddeaae-cabc-4b30-b7e8-ef34c65b980d")
+	)
 	(label "SCL"
-		(at 196.85 201.93 0)
+		(at 196.85 205.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7772,7 +7782,7 @@
 		(uuid "6300317c-4a76-468b-bcfb-0613bd600b27")
 	)
 	(label "Pyro GPIO 1"
-		(at 161.29 138.43 180)
+		(at 154.94 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7830,6 +7840,16 @@
 			(justify left bottom)
 		)
 		(uuid "747bb032-f0bc-4684-a14d-8c49702bd2a6")
+	)
+	(label "~{HIGH_G_CS}"
+		(at 154.94 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "75013686-deb5-40fd-9ee5-3f979cce2f24")
 	)
 	(label "RADIO_RST"
 		(at 82.55 114.3 0)
@@ -8012,7 +8032,7 @@
 		(uuid "c94c6d39-ee6f-4620-9e34-46e08e013423")
 	)
 	(label "SDA"
-		(at 196.85 204.47 0)
+		(at 196.85 208.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8152,7 +8172,7 @@
 		(uuid "f9a2a240-6de8-4bcf-b2d2-f522dd956c01")
 	)
 	(label "GPS_Reset"
-		(at 196.85 209.55 0)
+		(at 196.85 212.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9093,7 +9113,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "510k"
 			(at 106.68 124.4599 0)
 			(effects
 				(font
@@ -9129,12 +9149,13 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25779"
+		(property "LCSC" "C11616"
 			(at 104.14 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11266,7 +11287,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "33k"
 			(at 91.44 161.2899 0)
 			(effects
 				(font
@@ -11308,6 +11329,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11410,7 +11432,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33k"
+		(property "Value" "510k"
 			(at 91.44 151.1299 0)
 			(effects
 				(font
@@ -11446,12 +11468,13 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25779"
+		(property "LCSC" "C11616"
 			(at 88.9 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12189,7 +12212,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "33k"
 			(at 106.68 134.6199 0)
 			(effects
 				(font
@@ -12231,6 +12254,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -15248,7 +15272,7 @@
 	)
 	(sheet
 		(at 158.75 184.15)
-		(size 29.21 27.94)
+		(size 29.21 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -15272,7 +15296,7 @@
 			)
 		)
 		(property "Sheetfile" "442_Sensors.kicad_sch"
-			(at 158.75 212.6746 0)
+			(at 158.75 215.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15281,7 +15305,7 @@
 			)
 		)
 		(pin "SCL" input
-			(at 187.96 201.93 0)
+			(at 187.96 205.74 0)
 			(uuid "c7e589dc-a062-4645-a1e7-058160097d97")
 			(effects
 				(font
@@ -15291,7 +15315,7 @@
 			)
 		)
 		(pin "SDA" input
-			(at 187.96 204.47 0)
+			(at 187.96 208.28 0)
 			(uuid "024fc320-4c3b-461f-b498-e90672873f0b")
 			(effects
 				(font
@@ -15301,7 +15325,7 @@
 			)
 		)
 		(pin "GPS_Reset" input
-			(at 187.96 209.55 0)
+			(at 187.96 212.09 0)
 			(uuid "e69e1b9e-f0b9-43ca-963e-b93ead33636e")
 			(effects
 				(font
@@ -15353,6 +15377,16 @@
 		(pin "~{GYRO_CS}" input
 			(at 187.96 198.12 0)
 			(uuid "84880090-06e9-4277-ab3d-e75b87506363")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{HIGH_G_CS}" input
+			(at 187.96 200.66 0)
+			(uuid "da81caef-8736-40e0-a76b-6a9c5ac2a73e")
 			(effects
 				(font
 					(size 1.27 1.27)
