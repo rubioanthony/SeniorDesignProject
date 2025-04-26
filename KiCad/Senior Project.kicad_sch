@@ -7697,7 +7697,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN2_B2B-PH-K-S_JST"
+		(property "Footprint" "JST_Connector:CONN2_B2B-PH-K-S_JST"
 			(at 68.58 101.6 0)
 			(effects
 				(font
@@ -7935,7 +7935,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14445"
+		(property "LCSC" "C52923"
 			(at 93.98 55.88 0)
 			(effects
 				(font
