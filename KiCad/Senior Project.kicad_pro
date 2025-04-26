@@ -510,7 +510,7 @@
       "idf": "",
       "netlist": "",
       "plot": "../../../Homework/OSU/JLPCB/",
-      "pos_files": "",
+      "pos_files": "../../../Homework/OSU/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -520,7 +520,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "../../../Homework/OSU/JLPCB_BOM.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -545,7 +545,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
