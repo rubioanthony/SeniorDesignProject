@@ -50,7 +50,7 @@ void setup()
 {
   // put your setup code here, to run once:
   /*
-  Wire.begin(21,22);
+  Wire.begin(21,22); // need to change for the I2C lines for the LSM6
 
   Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 
