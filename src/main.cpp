@@ -1,16 +1,16 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <MS5611.h>
-#include <Adafruit_LSM6DSO32.h>
+//#include <Adafruit_LSM6DSO32.h>
 #include <HardwareSerial.h>
-#include <TinyGPSPlus.h>
+//#include <TinyGPSPlus.h>
 
 // put function declarations here:
 
 MS5611 ms5611;
-Adafruit_LSM6DSO32 LSM6;
+//Adafruit_LSM6DSO32 LSM6;
 HardwareSerial GPS(2);
-TinyGPSPlus gps;
+//TinyGPSPlus gps;
 
 float P0, P;
 float sum = 0;
@@ -31,7 +31,7 @@ String nmeaData = "";
 void setup() 
 {
   // put your setup code here, to run once:
-
+  /*
   Wire.begin(21,22);
 
   Serial.begin(115200);   //Set baud to 115200, standard for ESP32
@@ -70,7 +70,7 @@ void setup()
 
   //Set base pressure to measure change in height 
 
-  /*
+  
   Serial.println("Move to base height now...");
   delay(3000);
 
@@ -83,18 +83,19 @@ void setup()
   delay(10);
 }
   P0 = sum / 1000.0;
-  */
-
-
   
+*/
+
+Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 }
+
 
 void loop(){
 // put your main code here, to run repeatedly:
 
   //Read in data for sensor
   
-  ms5611.read();
+  //ms5611.read();
 
 
 /*
@@ -129,7 +130,7 @@ void loop(){
   Serial.println(deltaH * 3.28 );
   Serial.println("feet");
 */
-
+  /*
   //Read pressure
   Serial.println("Pressure: ");
   Serial.println(ms5611.getPressure());
@@ -158,7 +159,7 @@ void loop(){
   Serial.print(" \tZ: ");
   Serial.print(accel.acceleration.z);
   Serial.println(" m/s^2 ");
-
+  
   }
 
 
@@ -199,9 +200,180 @@ while (GPS.available()) {
   }
 
   */
- delay(3000);
+  //delay(3000);
+  Serial.println("Hello World");
 
 }
 
 // put function definitions here:
+/*
+#include <Arduino.h>
+#include <BMI088.h>
+#include <SPI.h>
+#include <RadioLib.h>
+#include <MS5611.h>
+#include <SparkFun_u-blox_GNSS_v3.h>
 
+#define ACCEL_CS      2
+#define GYRO_CS       21
+
+#define SCK           12
+#define MOSI          11
+#define MISO          13
+
+#define GPS_RESET     3
+
+#define POWER_LED     5
+
+#define RADIO_RESET   4
+#define RADIO_CS      10
+#define RADIO_INT     1
+
+#define BATTERY_SENSE 6
+#define CURRENT_SENSE 7
+
+#define SDA           8
+#define SCL           9
+
+#define PYRO_1_SENSE  14
+#define PYRO_1_GATE   38
+#define PYRO_2_SENSE  17
+#define PYRO_2_GATE   48
+#define PYRO_3_SENSE  18
+#define PYRO_3_GATE   47
+
+#define LORA_BW       125.0
+#define LORA_SF       9
+#define LORA_CR       7
+#define LORA_SYNCWORD 18
+#define LORA_POWER    20
+#define LORA_PREAMBLE 8
+
+Bmi088 bmi(SPI, ACCEL_CS, GYRO_CS);
+RFM95 radio = new Module(RADIO_CS, RADIO_INT, RADIO_RESET, RADIOLIB_NC);
+MS5611 barometer(0x77);
+SFE_UBLOX_GNSS gps;
+
+class VoltageDivPin {
+  public:
+  int pin;
+
+  VoltageDivPin(int p) : pin(p) {
+    pinMode(p, INPUT);
+    //analogSetPinAttenuation(p, adc_attenuation_t::ADC_11db);
+  }
+
+  float readVoltage() {
+    uint16_t v = analogRead(pin);
+    uint32_t millivolts = analogReadMilliVolts(pin);
+    //Serial.printf("pin = %d, %d mV\n", v, millivolts);
+    float voltage = ((float)millivolts) / 1000.0;
+    float divisor = 10.0 / (10.0 + 33.0);
+
+    return voltage / divisor;
+  }
+};
+
+VoltageDivPin battery(6);
+
+void setup() {
+  // pull radio CS high
+  pinMode(RADIO_CS, OUTPUT);
+  digitalWrite(RADIO_CS, HIGH);
+
+  // set up I2C
+  Wire.begin(SDA, SCL, 320000);
+
+  // set up barometer
+  if (!barometer.begin()) {
+    Serial.println("barometer error");
+  }
+
+  Serial.begin();
+
+  sleep(10);
+  Serial.println("running");
+
+  // set up SPI for BMI088
+  SPI.setFrequency(5000000);
+  SPI.begin(SCK, MISO, MOSI);
+
+  int status = bmi.begin();
+  if (status < 0) {
+    Serial.printf("BMI088 error = %d\n", status);
+  }
+
+  bmi.setRange(Bmi088::ACCEL_RANGE_3G, Bmi088::GYRO_RANGE_125DPS);
+
+  status = radio.begin(915.0, LORA_BW, LORA_SF, LORA_CR, LORA_SYNCWORD, LORA_POWER, LORA_PREAMBLE, 0);
+  if (status != 0) {
+    Serial.printf("Radio error = %d\n", status);
+  }
+
+  while (gps.begin() == false) {
+    Serial.println("u-blox GNSS not detected at default I2C address. Retrying...");
+    delay(1000);
+  }
+  gps.setI2COutput(COM_TYPE_UBX);
+
+  while (1) {
+    int state = radio.transmit("test message");
+    if (state != RADIOLIB_ERR_NONE) {
+      Serial.printf("Transmit error = %d\n", state);
+    } else {
+      Serial.println("sent packet");
+    }
+    sleep(2);
+  }
+}
+
+void loop() {
+  bmi.readSensor();
+
+  float x = bmi.getAccelX_mss();
+  float y = bmi.getAccelY_mss();
+  float z = bmi.getAccelZ_mss();
+
+  float pitch = bmi.getGyroX_rads();
+  float roll = bmi.getGyroY_rads();
+  float yaw = bmi.getGyroZ_rads();
+
+  float temp = bmi.getTemperature_C();
+  //Serial.printf("x = %f, y = %f, z = %f, pitch = %f, roll = %f, yaw = %f, temp = %f\n", x, y, z, pitch, roll, yaw, temp);
+
+  if (barometer.read() != MS5611_READ_OK) {
+    Serial.println("barometer read error");
+  }
+  float pressure = barometer.getPressure();
+  float baro_temp = barometer.getTemperature();
+
+  //Serial.printf("pressure = %f, temperature = %f\n", pressure, baro_temp);
+
+  if (gps.getPVT() == true) {
+    int32_t latitude = gps.getLatitude();
+    Serial.print("Lat: ");
+    Serial.print(latitude);
+
+    int32_t longitude = gps.getLongitude();
+    Serial.print(" Long: ");
+    Serial.print(longitude);
+    Serial.print(" (degrees * 10^-7)");
+
+    int32_t altitude = gps.getAltitudeMSL();
+    Serial.print(" Alt: ");
+    Serial.print(altitude);
+    Serial.print(" (mm)");
+
+    Serial.println();
+
+    Serial.printf("%d satellites in view\n", gps.getSIV());
+  } else {
+    Serial.printf("no fix, fix type = %d\n", gps.getFixType());
+  }
+
+  Serial.printf("battery voltage = %f\n", battery.readVoltage());
+
+  //sleep(1);
+  delayMicroseconds(500000);
+}
+*/
