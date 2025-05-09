@@ -58,15 +58,17 @@ String nmeaData = "";
 void setup() 
 {
   // put your setup code here, to run once:
-  
-  Wire.begin(6,5); // need to change for the I2C lines for the LSM6
-
   Serial.begin(115200);   //Set baud to 115200, standard for ESP32
+  //Serial.println("Hello World, Before wire begin");
+  Wire.begin(6,5); // need to change for the I2C lines for the LSM6
+  //Serial.println(" After wire begin");
+
+  
 
   //GPS.begin(9600, SERIAL_8N1, 16, 17); //Set GPS to 9600 baud, 8 bits, no parity, 1 stop but with TX 16 RX 17
 
   //If no valid sensor found print out
-  
+  /*
   if (!ms5611.begin()) {
     Serial.println("Could not find a valid MS5611 sensor, check wiring!");
     while (1);
@@ -81,7 +83,7 @@ void setup()
   }
   //If lsm6 is found print out validation message
   Serial.println("LSM6 found!");
-
+  */
   /*
   LSM6.setAccelRange(LSM6DSO32_ACCEL_RANGE_16_G);
   Serial.println("Acceleration range set to +/- 16 G...");
@@ -111,10 +113,11 @@ void setup()
   delay(10);
 }
   P0 = sum / 1000.0;
+
+
+
+Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 */
-
-
-//Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 }
 
 
@@ -230,5 +233,23 @@ while (GPS.available()) {
   */
   //delay(3000);
   Serial.println("Hello World");
+  delay(1000);
+  
+  if (!ms5611.begin()) {
+    Serial.println("Could not find a valid MS5611 sensor, check wiring!");
+    while (1);
+  }
+  //If sensor found print it out
+  Serial.println("MS5611 found!");
+
+  //If lsm6 isn't found print error
+  if (!LSM6.begin_I2C()) {
+    Serial.println("Could not find a valid LSM6 sensor, check wiring!");
+    while (1);
+  }
+  //If lsm6 is found print out validation message
+  Serial.println("LSM6 found!");
+  
+
 
 }
