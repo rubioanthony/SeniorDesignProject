@@ -8,12 +8,21 @@
 // put function declarations here:
 
 
-#define RADIO_RESET   4 // change for safe board
-#define RADIO_CS      10 // change for safe board
-#define RADIO_INT     1 // change for safe board
+#define SCK           12 // SPI SCK
+#define MOSI          11 // SPI MOSI
+#define MISO          13 // SPI MISO
 
 
 
+#define RADIO_RESET   14 // for safe board 
+#define RADIO_CS      10 // for safe board
+#define RADIO_INT     9 // for safe board
+
+
+#define SCL 5 // I2C SCL 
+#define SDA 6 // I2C SDA
+
+#define GPS_RESET     4 // for safe board
 
 // needed for RFM95 module
 #define LORA_BW       125.0
@@ -49,12 +58,12 @@ String nmeaData = "";
 void setup() 
 {
   // put your setup code here, to run once:
-  /*
-  Wire.begin(21,22); // need to change for the I2C lines for the LSM6
+  
+  Wire.begin(6,5); // need to change for the I2C lines for the LSM6
 
   Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 
-  GPS.begin(9600, SERIAL_8N1, 16, 17); //Set GPS to 9600 baud, 8 bits, no parity, 1 stop but with TX 16 RX 17
+  //GPS.begin(9600, SERIAL_8N1, 16, 17); //Set GPS to 9600 baud, 8 bits, no parity, 1 stop but with TX 16 RX 17
 
   //If no valid sensor found print out
   
@@ -73,6 +82,7 @@ void setup()
   //If lsm6 is found print out validation message
   Serial.println("LSM6 found!");
 
+  /*
   LSM6.setAccelRange(LSM6DSO32_ACCEL_RANGE_16_G);
   Serial.println("Acceleration range set to +/- 16 G...");
 
@@ -101,10 +111,10 @@ void setup()
   delay(10);
 }
   P0 = sum / 1000.0;
-  
 */
 
-Serial.begin(115200);   //Set baud to 115200, standard for ESP32
+
+//Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 }
 
 
