@@ -1,9 +1,13 @@
 #include <Arduino.h>
 #include <Wire.h>
-#include <MS5611.h>
 #include <Adafruit_LSM6DSO32.h>
 #include <HardwareSerial.h>
 #include <TinyGPSPlus.h>
+#include <RadioLib.h>
+#include <MS5611.h>
+#include "esp_log.h"
+
+
 
 // put function declarations here:
 
@@ -32,11 +36,11 @@
 #define LORA_POWER    20
 #define LORA_PREAMBLE 8
 
-
-
-MS5611 ms5611;
-Adafruit_LSM6DSO32 LSM6;
-HardwareSerial GPS(2);
+MS5611 barometer(0x76);
+//MS5x barometer(&Wire);
+//Adafruit_LSM6DSO32 LSM6;
+//HardwareSerial GPS(2);
+//RFM95 radio = new Module(RADIO_CS, RADIO_INT, RADIO_RESET, RADIOLIB_NC);
 //TinyGPSPlus gps;
 
 float P0, P;
@@ -54,13 +58,103 @@ unsigned long gpsLastUpdate = 0;
 const unsigned long gpsInterval = 60000;  // Update GPS every 1 minute
 
 String nmeaData = "";  
+static const char* TAG = "MY_TAG";
 
-void setup() 
-{
-  // put your setup code here, to run once:
-  Serial.begin(115200);   //Set baud to 115200, standard for ESP32
+
+void setup() {
+  
+  //pinMode(SCL, INPUT);
+  //digitalWrite(SCL, LOW);
+  Serial.begin(115200);
+  delay(5000);
+  Wire.begin(SDA, SCL, 320000);
+ // set up barometer
+  if (!barometer.begin()) {
+    Serial.println("barometer error");
+  }
+  /*
+   while(1) {
+      Serial.println("running");
+      delay(1000);
+  }
+  */
+  /*
+  pinMode(SCL, OUTPUT);
+  digitalWrite(SCL, LOW);
+  pinMode(SDA, OUTPUT);
+  digitalWrite(SDA, LOW);
+  */
+ /*
+ Wire.begin(SDA, SCL, 320000);
+  while(1) {
+      Serial.println("sent running");
+      delay(1000);
+  }
+  */
+  // pull radio CS high
+  /*
+  int status;
+  pinMode(RADIO_CS, OUTPUT);
+  digitalWrite(RADIO_CS, HIGH);
+
+  
+  Serial.begin(115200);
+
+  // set up SPI for RFM95W
+  SPI.setFrequency(5000000);
+  SPI.begin(SCK, MISO, MOSI);
+
+  
+  status = radio.begin(915.0, LORA_BW, LORA_SF, LORA_CR, LORA_SYNCWORD, LORA_POWER, LORA_PREAMBLE, 0);
+  if (status != 0) {
+    Serial.printf("Radio error = %d\n", status);
+  }
+
+   while (1) {
+    int state = radio.transmit("test message");
+    if (state != RADIOLIB_ERR_NONE) {
+      Serial.printf("Transmit error = %d\n", state);
+    } else {
+      Serial.println("sent packet");
+    }
+    sleep(2);
+  }
+  */
+  /*
+  //esp_log_level_set("*", ESP_LOG_VERBOSE);  // or INFO, WARN, ERROR
+  ESP_LOGI(TAG, "Hello from ESP_LOGI");
+  ESP_LOGE(TAG, "This is an error!");
+  while (!Serial);
+
+  Serial.println("Before Wire.begin");
+
+  Wire.begin(SDA, SCL, 320000);
+  //bool result = Wire.begin(SDA, SCL);
+  //Serial.printf("Wire.begin() returned: %s\n", result ? "SUCCESS" : "FAILURE");
+  delay(100);  // Add a small delay to stabilize I2C
+
+  Serial.println("After Wire.begin");
+  Serial.println("I2C Scanner running...");
+  for (uint8_t address = 1; address < 127; address++) {
+    Wire.beginTransmission(address);
+    if (Wire.endTransmission() == 0) {
+      Serial.print("Found I2C device at 0x");
+      Serial.println(address, HEX);
+    }
+  }
+  */
   //Serial.println("Hello World, Before wire begin");
-  Wire.begin(6,5); // need to change for the I2C lines for the LSM6
+  //pinMode(SDA, INPUT_PULLUP);  // SDA
+  //pinMode(SCL, INPUT_PULLUP);  // SCL
+  /*
+  Wire.begin(SDA,SCL); // need to change for the I2C lines for the LSM6
+  while(barometer.connect()>0) { // barometer.connect starts wire and attempts to connect to sensor
+		Serial.println(F("Error connecting..."));
+		delay(500);
+	}
+	Serial.println(F("Connected to Sensor"));
+	delay(5);
+  */
   //Serial.println(" After wire begin");
 
   
@@ -123,14 +217,23 @@ Serial.begin(115200);   //Set baud to 115200, standard for ESP32
 
 void loop(){
 // put your main code here, to run repeatedly:
+ delayMicroseconds(500000);
+  if (barometer.read() != MS5611_READ_OK) {
+    Serial.println("barometer read error");
+  }
+  float pressure = barometer.getPressure();
+  float baro_temp = barometer.getTemperature();
 
+  Serial.printf("pressure = %f, temperature = %f\n", pressure, baro_temp);
+
+  /*
   //Read in data for sensor
   
-  //ms5611.read();
+  barometer.read();
 
 
-/*
-  float temperature = ms5611.getTemperature(); // Temperature in °C
+
+  float temperature = barometer.getTemperature(); // Temperature in °C
   Serial.print("Temperature: ");
   Serial.print(temperature);
   Serial.println(" °C");
@@ -147,8 +250,8 @@ void loop(){
   sum = 0;  
 
   for (int i = 0; i < 1000; i++) {
-    ms5611.read();
-    sum += ms5611.getPressurePascal();
+    barometer.read();
+    sum += barometer.getPressurePascal();
     delay(10);
   }
 
@@ -160,21 +263,21 @@ void loop(){
   Serial.println("Change in height: ");
   Serial.println(deltaH * 3.28 );
   Serial.println("feet");
-*/
-  /*
+
+  
   //Read pressure
   Serial.println("Pressure: ");
-  Serial.println(ms5611.getPressure());
+  Serial.println(barometer.getPressure());
   Serial.println(" mbar");
 
 
 
   Serial.println("Temperature: ");
-  Serial.println(ms5611.getTemperature());
+  Serial.println(barometer.getTemperature());
   Serial.println(" degrees celsius");
+  */
 
-
-
+  /*
   sensors_event_t accel;
   sensors_event_t gyro;
   sensors_event_t temp;
@@ -192,7 +295,7 @@ void loop(){
   Serial.println(" m/s^2 ");
   
   }
-
+  */
 
 
 /*
@@ -231,17 +334,8 @@ while (GPS.available()) {
   }
 
   */
-  //delay(3000);
-  Serial.println("Hello World");
-  delay(1000);
-  
-  if (!ms5611.begin()) {
-    Serial.println("Could not find a valid MS5611 sensor, check wiring!");
-    while (1);
-  }
-  //If sensor found print it out
-  Serial.println("MS5611 found!");
-
+  //delay(3000);  
+  /*
   //If lsm6 isn't found print error
   if (!LSM6.begin_I2C()) {
     Serial.println("Could not find a valid LSM6 sensor, check wiring!");
@@ -249,7 +343,7 @@ while (GPS.available()) {
   }
   //If lsm6 is found print out validation message
   Serial.println("LSM6 found!");
-  
+  */
 
 
 }
