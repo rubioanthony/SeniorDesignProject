@@ -17167,7 +17167,7 @@
 	(footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical"
 		(layer "F.Cu")
 		(uuid "a628c8b6-68c0-4c10-86b8-d490893957de")
-		(at 129.53 116.06)
+		(at 130.93 115.725)
 		(descr "Through hole straight pin header, 2x05, 1.27mm pitch, double rows")
 		(tags "Through hole pin header THT 2x05 1.27mm double row")
 		(property "Reference" "J4"
