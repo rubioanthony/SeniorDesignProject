@@ -43,7 +43,7 @@
 
 MS5611 barometer(0x76);
 LSM6 imu; 
-//SFE_UBLOX_GNSS gps; 
+SFE_UBLOX_GNSS gps; 
 //MS5x barometer(&Wire);
 RFM95 radio = new Module(RADIO_CS, RADIO_INT, RADIO_RESET, RADIOLIB_NC);
 
@@ -71,20 +71,27 @@ void setup() {
   Serial.begin(115200);
   //pinMode(SCL, INPUT);
   //digitalWrite(SCL, LOW);
-  
-  Wire.begin(SDA, SCL, 320000);
+  pinMode(GPS_RESET, OUTPUT);
+  digitalWrite(GPS_RESET, HIGH);
+  Wire.begin(SDA, SCL, 50000);
   delay(1000);
  // set up barometer
   while (!barometer.begin()) {
     Serial.println("barometer error");
   }
   // GPS code to eventually run
-  /*
+  
   while (gps.begin() == false) {
     Serial.println("u-blox GNSS not detected at default I2C address. Retrying...");
     delay(1000);
   }
   gps.setI2COutput(COM_TYPE_UBX);
+
+  /*
+  while(1) {
+      Serial.println("running");
+      delay(1000);
+  }
   */
   
   if (!imu.init())
@@ -93,12 +100,6 @@ void setup() {
     while (1);
   }
   imu.enableDefault();
-  /*
-  while(1) {
-      Serial.println("running");
-      delay(1000);
-  }
-  */
   // pull radio CS high
   
   int status;
@@ -114,7 +115,7 @@ void setup() {
     Serial.printf("Radio error = %d\n", status);
   }
   
-  
+   /*
    while (1) {
     int state = radio.transmit("test message");
     if (state != RADIOLIB_ERR_NONE) {
@@ -124,7 +125,7 @@ void setup() {
     }
     sleep(2);
     }
-  
+  */
 }
   
 
@@ -152,6 +153,8 @@ void loop(){
   imu.a.x, imu.a.y, imu.a.z,
   imu.g.x, imu.g.y, imu.g.z);
   Serial.println(report);
+
+
 
   delay(100);
 
@@ -206,7 +209,7 @@ void loop(){
   Serial.println(barometer.getTemperature());
   Serial.println(" degrees celsius");
   */
-  /*
+  
     if (gps.getPVT() == true) {
     int32_t latitude = gps.getLatitude();
     Serial.print("Lat: ");
@@ -224,11 +227,22 @@ void loop(){
 
     Serial.println();
 
-    Serial.printf("%d satellites in view\n", gps.getSIV());
+    Serial.printf("%d satellites in view, fix type = %d\n", gps.getSIV(), gps.getFixType() );
   } else {
     Serial.printf("no fix, fix type = %d\n", gps.getFixType());
   }
   
+
+  int state = radio.transmit(report); // transmit Accelorometer Data 
+  /*
+  int state = radio.transmit("test message");
+    if (state != RADIOLIB_ERR_NONE) {
+      Serial.printf("Transmit error = %d\n", state);
+    } else {
+      Serial.println("sent packet");
+    }
+    sleep(2);
+    }
   */
 
 
