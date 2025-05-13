@@ -30,102 +30,76 @@
 #define GPS_RESET     4 // for safe board
 
 // needed for RFM95 module
-#define LORA_BW       125.0
-#define LORA_SF       9
+#define LORA_BW       62.5
+#define LORA_SF       11
 #define LORA_CR       7
 #define LORA_SYNCWORD 18
 #define LORA_POWER    20
 #define LORA_PREAMBLE 8
 
-//MS5611 ONE(0x76);   //  0x76 = CSB to VCC
-//MS5611 TWO(0x77);   //  0x77 = CSB to GND
+// packet format
+struct GPSData{
+  int32_t lat, lon, a, p, alt;
+  uint32_t time;
 
 
+};
+
+// Sensor and radio initializations
 MS5611 barometer(0x76);
 LSM6 imu; 
 SFE_UBLOX_GNSS gps; 
-//MS5x barometer(&Wire);
 RFM95 radio = new Module(RADIO_CS, RADIO_INT, RADIO_RESET, RADIOLIB_NC);
-
-float P0, P;
-float sum = 0;
-float T_0 = 288.15; //
-float L = 0.0065;  // Temperature lapse rate in K/m
-float R = 8.31447;  // Universal gas constant in J/(mol K)
-float g = 9.80665;  // Gravitational acceleration in m/s²
-float M = 0.0289644;
-
-unsigned long startMillis = millis();  // To store the start time
-unsigned long currentMillis;  // To store the current time
-int minutesPassed = 0;  // Variable to store the number of minutes passed
-unsigned long gpsLastUpdate = 0;
-const unsigned long gpsInterval = 60000;  // Update GPS every 1 minute
-
-String nmeaData = "";  
-static const char* TAG = "MY_TAG";
-uint32_t start, stop;
-char report[80];
 
 
 void setup() {
+  // allow for monitoring
   Serial.begin(115200);
-  //pinMode(SCL, INPUT);
-  //digitalWrite(SCL, LOW);
+  
+  // set GPS reset high to allow to start calibrating
   pinMode(GPS_RESET, OUTPUT);
   digitalWrite(GPS_RESET, HIGH);
+
+  // Setup I2C
   Wire.begin(SDA, SCL, 50000);
   delay(1000);
+
  // set up barometer
   while (!barometer.begin()) {
     Serial.println("barometer error");
   }
-  // GPS code to eventually run
+  barometer.reset(1);
   
+  
+  // GPS setup
   while (gps.begin() == false) {
     Serial.println("u-blox GNSS not detected at default I2C address. Retrying...");
     delay(1000);
   }
   gps.setI2COutput(COM_TYPE_UBX);
-
-  /*
-  while(1) {
-      Serial.println("running");
-      delay(1000);
-  }
-  */
   
+  // IMU setup
   if (!imu.init())
   {
     Serial.println("Failed to detect and initialize IMU!");
     while (1);
   }
   imu.enableDefault();
-  // pull radio CS high
-  
+ 
+   // pull radio CS high
   int status;
   pinMode(RADIO_CS, OUTPUT);
   digitalWrite(RADIO_CS, HIGH);
+
   // set up SPI for RFM95W
   SPI.setFrequency(5000000);
   SPI.begin(SCK, MISO, MOSI);
 
-  
+  // Configure radio with specified LoRa values
   status = radio.begin(915.0, LORA_BW, LORA_SF, LORA_CR, LORA_SYNCWORD, LORA_POWER, LORA_PREAMBLE, 0);
   if (status != 0) {
     Serial.printf("Radio error = %d\n", status);
   }
-  
-   /*
-   while (1) {
-    int state = radio.transmit("test message");
-    if (state != RADIOLIB_ERR_NONE) {
-      Serial.printf("Transmit error = %d\n", state);
-    } else {
-      Serial.println("sent packet");
-    }
-    sleep(2);
-    }
-  */
 }
   
 
@@ -136,80 +110,21 @@ void loop(){
 
 
  delayMicroseconds(500000);
-  if (barometer.read() != MS5611_READ_OK) {
-    Serial.println("barometer read error");
-  }
-  float pressure = barometer.getPressure();
-  float baro_temp = barometer.getTemperature();
-
-  Serial.printf("pressure = %f, temperature = %f\n", pressure, baro_temp);
-
-
-  
-  delayMicroseconds(500000);
-  imu.read();
-
-  snprintf(report, sizeof(report), "A: %6d %6d %6d    G: %6d %6d %6d",
-  imu.a.x, imu.a.y, imu.a.z,
-  imu.g.x, imu.g.y, imu.g.z);
-  Serial.println(report);
-
-
 
   delay(100);
 
-
-  /*
-  //Read in data for sensor
-  
-  barometer.read();
-
-
-
-  float temperature = barometer.getTemperature(); // Temperature in °C
-  Serial.print("Temperature: ");
-  Serial.print(temperature);
-  Serial.println(" °C");
-
-  // Calculate temperature in Kelvin
-  float T = temperature + 273.15;
-
-  Serial.println("Move to new height.");
-
-  delay(5000);
-
-  Serial.println("Calculating change in height from original position...");
-
-  sum = 0;  
-
-  for (int i = 0; i < 1000; i++) {
-    barometer.read();
-    sum += barometer.getPressurePascal();
-    delay(10);
-  }
-
-  P = sum / 1000.0;
-
-  float deltaH = -1*(T_0 / L) * (pow((P / P0), (R * L) / (g * M)) - 1);
+    // Read pressure from barometer
+    if (barometer.read() != MS5611_READ_OK) {
+    Serial.println("barometer read error");
+    }
+    float pressure = barometer.getPressure();
+    Serial.printf("pressure = %f ",  pressure);
 
 
-  Serial.println("Change in height: ");
-  Serial.println(deltaH * 3.28 );
-  Serial.println("feet");
+    // Read data from IMU
+    imu.read();
 
-  
-  //Read pressure
-  Serial.println("Pressure: ");
-  Serial.println(barometer.getPressure());
-  Serial.println(" mbar");
-
-
-
-  Serial.println("Temperature: ");
-  Serial.println(barometer.getTemperature());
-  Serial.println(" degrees celsius");
-  */
-  
+    // read GPS data
     if (gps.getPVT() == true) {
     int32_t latitude = gps.getLatitude();
     Serial.print("Lat: ");
@@ -228,23 +143,35 @@ void loop(){
     Serial.println();
 
     Serial.printf("%d satellites in view, fix type = %d\n", gps.getSIV(), gps.getFixType() );
-  } else {
-    Serial.printf("no fix, fix type = %d\n", gps.getFixType());
-  }
-  
+    // configure packet for sending
+    GPSData packet;
+    packet.lat = gps.getLatitude();
+    packet.lon = gps.getLongitude();
 
-  int state = radio.transmit(report); // transmit Accelorometer Data 
-  /*
-  int state = radio.transmit("test message");
+    // convert read acceleration value into m/s
+    float accel_ms = (float)imu.a.z/((float)32768) * ((float)4) * ((float)9.8); // factor from data sheet
+    Serial.print(accel_ms);
+
+    Serial.print(" (m/s)");
+    // convert value so it isn't improperly rounded when sent in packet
+    packet.a = accel_ms * 1000;
+    // grab pressure value to be sent 
+    packet.p = barometer.getPressurePascal();
+    // use GPS altitude to be eventually be setn
+    packet.alt = altitude;
+    uint32_t us; // for time if we wanted time to be sent
+
+    // transmit packet with sensor data
+    int state =  radio.transmit((uint8_t*)&packet, sizeof(packet),0);
     if (state != RADIOLIB_ERR_NONE) {
       Serial.printf("Transmit error = %d\n", state);
     } else {
       Serial.println("sent packet");
-    }
-    sleep(2);
-    }
-  */
+    }    
 
-
-
+    // GPS debugging statement
+  } else {
+    Serial.printf("no fix, fix type = %d\n", gps.getFixType());
+  }
+  
 }
